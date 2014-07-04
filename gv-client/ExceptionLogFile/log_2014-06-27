@@ -1,0 +1,2095 @@
+Couldn't get theme box. 
+java.lang.RuntimeException: Couldn't get theme box. 
+	at br.org.funcate.terrajava.persistencia.TerraJava.getThemeBox(Native Method)
+	at br.org.funcate.terrajava.persistencia.TerraJava.getThemeBox(TerraJava.java:661)
+	at br.org.funcate.glue.service.TerraJavaJNI.getCurrentThemeBox(TerraJavaJNI.java:324)
+	at br.org.funcate.glue.service.TerraJavaClient.getCurrentThemeBox(TerraJavaClient.java:1206)
+	at br.org.funcate.glue.model.canvas.CanvasService.selectObject(CanvasService.java:829)
+	at br.org.funcate.glue.controller.InfoToolController.getMap(InfoToolController.java:47)
+	at br.org.funcate.glue.controller.listener.InfoToolAdapter.actionPerformed(InfoToolAdapter.java:24)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$200(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more
+Ocorreu um erro ao desenhar lista de temas. 
+java.lang.RuntimeException: Ocorreu um erro ao desenhar lista de temas. 
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1219)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2555)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:85)
+Caused by: java.lang.InstantiationException: Missing map variable with the key: 'transparency'
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1211)
+	... 3 more

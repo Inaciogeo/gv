@@ -1,0 +1,10 @@
+The number of the themes in the list themes is invalid
+java.lang.RuntimeException: The number of the themes in the list themes is invalid
+	at br.org.funcate.terrajava.persistencia.TerraJava.setThemesPriorityOrder(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.setThemesPriorityOrder(TerraJavaJNI.java:341)
+	at br.org.funcate.glue.service.TerraJavaClient.updateView(TerraJavaClient.java:3161)
+	at br.org.funcate.glue.model.tree.TreeState.updateSelectedView(TreeState.java:1037)
+	at br.org.funcate.glue.model.tree.TreeService.updateSelectedView(TreeService.java:191)
+	at br.org.funcate.glue.controller.TreeController.updateSelectedView(TreeController.java:251)
+	at br.org.funcate.glue.controller.Mediator.updateSelectedView(Mediator.java:505)
+	at br.org.funcate.glue.model.thread.ViewUpdator.run(ViewUpdator.java:43)

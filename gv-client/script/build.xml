@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="GV" basedir="." default="copy-dependencies-jars">
+
+	<!-- Specific jar sign configuration for FUNCATE -->
+	<!-- @See ../docs/assinatura_de_jar.txt -->
+	<property name="alias"        	value="funcatekey"/>
+	<property name="storepass"      value="123456"/>	
+	
+	<property name="bin.dir"        value="../bin"/>
+	<property name="src.dir"        value="../src/"/>
+	<property name="deps.dir" 		value="../lib" />
+	
+	<!-- Defines the resource server folder to deploy the jtdk plugin -->
+	<property name="resource.dir"     value="../../../recursos/"/>
+
+	<target name="clean">
+		<echo>
+    		Cleaning
+    	</echo>
+		<delete dir="${bin.dir}"/>
+		<delete file="${resource.dir}/gv-client.jar"/>
+	</target>
+
+	<target name="compile" depends="clean">
+		<echo>
+            Compiling
+        </echo>
+		<mkdir dir="${bin.dir}"/>
+		<javac debug="true" srcdir="${src.dir}" destdir="${bin.dir}">
+			<classpath>
+				<fileset dir="${deps.dir}">
+					<include name="*.jar"/>
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile">
+		<echo>
+            Creating jar
+        </echo>
+		<jar destfile="${resource.dir}/gv-client.jar" basedir="${bin.dir}">
+			<fileset dir="${src.dir}" includes="**/*.*" excludes="**/*.java,**/*.class"/>
+		</jar>
+	</target>
+
+	<target name="signed" depends="jar">
+		<signjar jar="${resource.dir}/gv-client.jar"  alias="${alias}" storepass="${storepass}"/>
+	</target>
+	
+	<target name="copy-dependencies-jars" depends="signed">
+		<echo file="${resource.dir}/glueplugins.txt" append="true" message="com.nexusbr.gv.access.GVClient${line.separator}" />
+		<echo>
+            Copying dependencies jars to plugin(s) dependencies directory(ies)
+        </echo>
+    	<copy overwrite="true" todir="${resource.dir}">
+      		<fileset dir="${deps.dir}" includes="*.jar" />
+    	</copy>
+  	</target>
+</project>
