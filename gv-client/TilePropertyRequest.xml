@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<request>
+	<content>
+		<id>0</id>
+		<name>OpenStreetMap</name>
+		<url>http://c.tile.openstreetmap.org/</url>
+		<desc>Requisição do mapa de arruamentos padrão OpenStreeMap.</desc>
+	</content>
+	<content>
+		<id>1</id>
+		<name>CGI</name>
+		<url>http://urlCGI/</url>
+		<desc>Requisição do mapa cgi.</desc>
+	</content>
+	<content>
+		<id>1</id>
+		<name>CGI -- 2</name>
+		<url>http://ggi2.com/2/</url>
+		<desc>Requisição do mapa cgi.</desc>
+	</content>
+	<content>
+		<id>2</id>
+		<name>Google</name>
+		<url>http://mt1.google.com/vt/lyrs</url>
+		<desc>Requisição do mapa de arruamentos padrão da Google.</desc>
+	</content>
+</request>

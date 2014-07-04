@@ -1,0 +1,1 @@
+<terrajava><database host='localhost' user='postgres' password='postgres' database='glue' port='5432' dbType='2'></database></terrajava>
