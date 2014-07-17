@@ -39,6 +39,7 @@ public class DatabaseConnectionSettings extends JFrame {
 
 	private JTextField dbName;
 
+	@SuppressWarnings("rawtypes")
 	private JComboBox comboBox;
 
 	private JButton btnConectar;
@@ -54,6 +55,7 @@ public class DatabaseConnectionSettings extends JFrame {
 	 * <Attribute type boolean
 	 */
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public DatabaseConnectionSettings() {
 		try {
 		    for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
@@ -240,10 +242,12 @@ public class DatabaseConnectionSettings extends JFrame {
 		this.dbName.setText(dbName);
 	}
 
+	@SuppressWarnings("rawtypes")
 	public JComboBox getComboBox() {
 		return comboBox;
 	}
 
+	@SuppressWarnings("rawtypes")
 	public void setComboBox(JComboBox comboBox) {
 		this.comboBox = comboBox;
 	}

@@ -58,6 +58,7 @@ public class GVClient implements EventDispatcher, EventListener{
 	private double showScaleValue;
 	private ArrayList<String> idsOld;
 	private ArrayList<String> streetIds;
+	private ArrayList<String> lotIds;
 	
 	/**
 	 * Creates the GVClient.
@@ -155,37 +156,42 @@ public class GVClient implements EventDispatcher, EventListener{
 		}	
 	}
 	
-	public void drawFeaturePolygonById(ArrayList<String> ids) throws Exception{		
-		dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createLineStyle(),"LINE"));
-		manager.ShowPolygonFeaturesByID(manager.locatePolygonsByID(ids));	
-		manager.dispatchLayersFeedback();
-		manager.dispatchLayersEdition();
+	public void drawFeaturePolygonById(ArrayList<String> ids) throws Exception{
+		try {
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPolygonStyle(), "POLYGON"));
+			manager.ShowPolygonFeaturesByID(manager.locatePolygonsByID(ids));
+			manager.dispatchLayersFeedback();
+			manager.dispatchLayersEdition();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 			
 	}
 	
 	public void initFeatures(){
-//		try {
-//			
-//			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createSnapPointStyle(), "SNAPPOINT"));
-//			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createGhostPointStyle(), "GHOSTPOINT"));
-//			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createGhostLineStyle(), "GHOSTLINE"));
-//			
-//			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPointStyle(), "POINT"));
-//			manager.ShowPointFeatures(manager.locatePoints());
-//			
-//			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createLineStyle(), "LINE"));
-//			manager.ShowLineFeatures(manager.locateLines());
-//			
-//			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPolygonStyle(), "POLYGON"));
-//			manager.ShowPolygonFeatures(manager.locatePolygons());
-//			
-//			manager.dispatchLayersFeedback();
-//			manager.dispatchLayersEdition();
-//			
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		try {
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createSnapPointStyle(), "SNAPPOINT"));
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createGhostPointStyle(), "GHOSTPOINT"));
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createGhostLineStyle(), "GHOSTLINE"));
+			
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPointStyle(), "POINT"));
+			manager.ShowPointFeatures(manager.locatePoints());
+			
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createLineStyle(), "LINE"));
+			manager.ShowLineFeatures(manager.locateLines());
+			ArrayList<String> ids = new ArrayList<String>();
+			ids.add("100");
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPolygonStyle(), "POLYGON"));
+			manager.ShowPolygonFeaturesByID(manager.locatePolygonsByID(ids));
+			
+			manager.dispatchLayersFeedback();
+			manager.dispatchLayersEdition();
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -225,11 +231,13 @@ public class GVClient implements EventDispatcher, EventListener{
 		}
 	}
 	private void handle (DrawFeatureEvent e){
-		 streetIds = new ArrayList<String>();
 		 streetIds = e.getLineIds(); 
+		 lotIds = e.getPolygonIds();
 		 try {
-				this.drawFeatureLineById(streetIds);
-				//this.drawFeaturePolygonById(streetIds);
+			 if(!streetIds.isEmpty())
+				drawFeatureLineById(streetIds);
+			 if(!lotIds.isEmpty())
+				drawFeaturePolygonById(lotIds);
 				
 			} catch (Exception e1) {
 				e1.printStackTrace();
@@ -292,12 +300,12 @@ public class GVClient implements EventDispatcher, EventListener{
 			 start = true;
 			 lock = true;
 		 }
-		 showScaleValue = 1500;
+		 showScaleValue = 50;
 		 
 		if(scale<=showScaleValue && !editIsSet && (difX1 > 630 || difY1 > 140) || start){
 			oldx1 = AppSingleton.getInstance().getCanvasState().getBox().getX1();
 			oldy1 = AppSingleton.getInstance().getCanvasState().getBox().getY1();
-			initFeatures();
+			//initFeatures();
 			start = false;
 		}
 	}

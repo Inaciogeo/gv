@@ -22,6 +22,7 @@ public class CellEditor {
 		
 	}
 	
+	@SuppressWarnings("rawtypes")
 	public CmbEditor cmbColEditor(JComboBox cmb){
 		return new CmbEditor(cmb);
 	}
@@ -33,8 +34,10 @@ public class CellEditor {
 			
 	public class CmbEditor extends AbstractCellEditor implements TableCellEditor {
 		private static final long serialVersionUID = -8021818909797674772L;
+		@SuppressWarnings("rawtypes")
 		private JComboBox editorComponent;
 
+		@SuppressWarnings("rawtypes")
 		public CmbEditor(JComboBox cmb) {
 			this.editorComponent = cmb;
 		}

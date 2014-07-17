@@ -42,3 +42,123 @@ LINE 1: ...llection_3.c_object_id = log_lin.object_id) WHERE goem_id=23...
 sql=SELECT MIN(((log_lin.spatial_box[1])[0])), MIN(((log_lin.spatial_box[1])[1])), MAX(((log_lin.spatial_box[0])[0])), MAX(((log_lin.spatial_box[0])[1]))  FROM ((te_collection_3_aux LEFT JOIN te_collection_3 ON te_collection_3_aux.object_id = te_collection_3.c_object_id ) LEFT JOIN log_lin ON te_collection_3.c_object_id = log_lin.object_id) WHERE object_id = '2278'
 error=ERRO:  referência à coluna "object_id" é ambígua at character 398
 
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 383708.074209665700000 AND te_collection_2.label_y > 7411988.163268812000000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 393049.688454448190000 AND te_collection_2.label_y > 7424392.286101059100000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 404095.338142595370000 AND te_collection_2.label_y > 7428262.273587882500000 AND te_collection_2.label_x < 420731.820969927760000 AND te_collection_2.label_y < 7437852.393805945300000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 404095.338142595370000 AND te_collection_2.label_y > 7428262.273587882500000 AND te_collection_2.label_x < 420731.820969927760000 AND te_collection_2.label_y < 7437852.393805945300000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 374662.185046833820000 AND te_collection_2.label_y > 7412963.756084658200000 AND te_collection_2.label_x < 441207.255660428260000 AND te_collection_2.label_y < 7450263.394523487400000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 383708.074209665700000 AND te_collection_2.label_y > 7411988.163268812000000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 383708.074209665700000 AND te_collection_2.label_y > 7411988.163268812000000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 383708.074209665700000 AND te_collection_2.label_y > 7411988.163268812000000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 383708.074209665700000 AND te_collection_2.label_y > 7411988.163268812000000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 383708.074209665700000 AND te_collection_2.label_y > 7411988.163268812000000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 377544.534914138840000 AND te_collection_2.label_y > 7413683.136575081400000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 377583.057034735860000 AND te_collection_2.label_y > 7413683.136575081400000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT logradouro, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 377621.579155332870000 AND te_collection_2.label_y > 7413683.136575081400000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.logradouro IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "logradouro" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 383708.074209665700000 AND te_collection_2.label_y > 7411988.163268812000000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 399800.690089079670000 AND te_collection_2.label_y > 7426742.135457478500000 AND te_collection_2.label_x < 418195.002674166870000 AND te_collection_2.label_y < 7436372.665606739000000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 399810.320619228760000 AND te_collection_2.label_y > 7426742.135457478500000 AND te_collection_2.label_x < 418204.633204316370000 AND te_collection_2.label_y < 7436372.665606739000000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 399819.951149378030000 AND te_collection_2.label_y > 7426742.135457478500000 AND te_collection_2.label_x < 418214.263734465640000 AND te_collection_2.label_y < 7436372.665606739000000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 399829.581679527300000 AND te_collection_2.label_y > 7426742.135457478500000 AND te_collection_2.label_x < 418223.894264614910000 AND te_collection_2.label_y < 7436372.665606739000000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 383708.074209665700000 AND te_collection_2.label_y > 7411988.163268812000000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 383708.074209665700000 AND te_collection_2.label_y > 7411988.163268812000000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 383708.074209665700000 AND te_collection_2.label_y > 7411988.163268812000000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 391739.936354148780000 AND te_collection_2.label_y > 7424777.507307029300000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 401996.450963111010000 AND te_collection_2.label_y > 7428937.896331509600000 AND te_collection_2.label_x < 420390.763548198210000 AND te_collection_2.label_y < 7438568.426480770100000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 406046.088890874930000 AND te_collection_2.label_y > 7431692.227954198600000 AND te_collection_2.label_x < 415243.245183418500000 AND te_collection_2.label_y < 7436507.493028828900000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 408157.582626100280000 AND te_collection_2.label_y > 7433069.393765542700000 AND te_collection_2.label_x < 412756.160772372100000 AND te_collection_2.label_y < 7435477.026302857300000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamentos, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 398608.911983108670000 AND te_collection_2.label_y > 7430035.776768526100000 AND te_collection_2.label_x < 417003.224568195870000 AND te_collection_2.label_y < 7439666.306917786600000)  AND arruamento_SJC.arruamentos IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "arruamentos" não existe at character 53
+
+-------------------
+sql=SELECT arruamento_sjc, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 383708.074209665700000 AND te_collection_2.label_y > 7411988.163268812000000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.arruamento_sjc IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna arruamento_sjc.arruamento_sjc não existe at character 513
+
+-------------------
+sql=SELECT arruamento_sjc, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 392895.599972060010000 AND te_collection_2.label_y > 7424392.286101059100000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.arruamento_sjc IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna arruamento_sjc.arruamento_sjc não existe at character 513
+
+-------------------
+sql=SELECT nome, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 383708.074209665700000 AND te_collection_2.label_y > 7411988.163268812000000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7442030.837335090200000)  AND arruamento_SJC.nome IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "classe" não existe at character 545
+
+-------------------
+sql=SELECT nome, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 392972.644213254100000 AND te_collection_2.label_y > 7422543.224312401400000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7441804.284610921500000)  AND arruamento_SJC.nome IS NOT NULL  ORDER BY classe DESC 
+error=ERRO:  coluna "classe" não existe at character 545
+

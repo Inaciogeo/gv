@@ -305,7 +305,7 @@ public class Manager implements Tool {
 		List<Theme> themes = view.getThemes();
 		
 		for (Theme theme : themes) {
-			if(theme.getId()==13){ // ID do tema de arruamentos,(id=1 id gerado no banco para o tema de arruamentos). 
+			if(theme.getId()==13){ // ID do tema de arruamentos,(id gerado no banco para o tema de arruamentos). 
 				th = theme;
 			}
 		}
@@ -376,17 +376,20 @@ public class Manager implements Tool {
 		List<Theme> themes = view.getThemes();
 		
 		for (Theme theme : themes) {
-			if(theme.getId()==6){ // ID do tema lotes: id gerado no modelo bd.
+			if(theme.getId()==12){ // ID do tema lotes: id gerado no modelo bd.
 				th = theme;
 			}
 		}
 		
 		ArrayList<FeatureDTO> listObj = featureManipulation.getFeatures(ids, th);
 		for (FeatureDTO feature : listObj) {
-			GVSingleton.getInstance().getLineIDs().add(feature.getObjectId());
-			
+			GVSingleton.getInstance().getPolygonIDs().add(feature.getObjectId());
 		}
-		
+
+		// VERIFY IF THERE ALREADY EXIST THE POINT IN SCREEN
+		ArrayList<String> listIDs = getFeaturesID("POLYGON",GVSingleton.getInstance().getPolygonIDs());
+
+		// GET FEATURES From Object Ids
 		listF.addAll(listObj);
 		
 		return listF;
@@ -531,12 +534,18 @@ public class Manager implements Tool {
 		for (FeatureDTO feature : listF) {
 			SimpleFeature simpleFeature = feature.getSimpleFeature();
 			Polygon geom = (Polygon)simpleFeature.getDefaultGeometry();
-			SimpleFeature featLine = new LineCreatorService().createFeatureLine(geom.getCoordinates());
-			LineString geomLine = (LineString) featLine.getDefaultGeometry();
-		
-			SimpleFeature feat = new LineCreatorService().createLine(geomLine, false, false,"","", simpleFeature.getID(), 
-					new ArrayList<PointReference>(), new ArrayList<PointReference>());
-			dispatch(transmitter, new FeatureCreatedEvent(this,feat,"LINE", true));
+
+			SimpleFeature feat = new PolygonCreatorService().createPolygon(
+					geom, false, feature.getObjectId());
+			dispatch(transmitter, new FeatureCreatedEvent(this, feat,
+					"POLYGON", true));
+
+			// Creates another feature with attribute 'selected', which is used
+			// to display selected geometries in draw
+			SimpleFeature featureToDraw = new PolygonCreatorService()
+					.createPolygon(feature.getSimpleFeature());
+			dispatch(transmitter, new FeatureCreatedEvent(this, featureToDraw,
+					"POLYGON", true));
 		}
 	}
 
