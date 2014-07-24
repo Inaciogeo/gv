@@ -38,8 +38,8 @@
 	<classpathentry exported="true" kind="lib" path="lib/xercesImpl.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/xml-apis.jar"/>
 	<classpathentry kind="lib" path="/glue-client/lib/jdom-2.0.5.jar"/>
-	<classpathentry kind="lib" path="lib/eagles.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/glue-client"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/JTDK"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/terrajava-api"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

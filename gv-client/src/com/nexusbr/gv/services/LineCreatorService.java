@@ -3,15 +3,11 @@ package com.nexusbr.gv.services;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.JOptionPane;
-
 import org.geotools.data.DataUtilities;
 import org.geotools.feature.SchemaException;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
-
-import br.org.funcate.glue.view.MainPanel;
 
 import com.nexusbr.gv.model.DTO.PointReference;
 import com.vividsolutions.jts.geom.Coordinate;
@@ -100,7 +96,7 @@ public class LineCreatorService {
 						point1, // is POINT 1
 						point2, // is POINT 2
 						p1Ref, // Point 1 References
-						p2Ref // Point 2 References
+						p2Ref, // Point 2 References
 						
 				}, ID // ID AUTOMATICO
 				));

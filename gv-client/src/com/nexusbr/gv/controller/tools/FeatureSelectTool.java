@@ -2,7 +2,6 @@ package com.nexusbr.gv.controller.tools;
 
 import java.awt.Cursor;
 import java.awt.event.KeyEvent;
-import java.awt.event.MouseWheelEvent;
 import java.util.ArrayList;
 import java.util.EventObject;
 import java.util.List;
@@ -25,8 +24,6 @@ import br.org.funcate.glue.event.MouseDraggedEvent;
 import br.org.funcate.glue.event.MousePressedEvent;
 import br.org.funcate.glue.event.MouseReleasedEvent;
 import br.org.funcate.glue.main.AppSingleton;
-import br.org.funcate.glue.model.Projection;
-import br.org.funcate.jtdk.edition.event.FeatureCreatedEvent;
 import br.org.funcate.jtdk.edition.event.FeatureRemovedEvent;
 import br.org.funcate.jtdk.edition.event.GetFeatureEvent;
 import br.org.funcate.jtdk.edition.event.SetStyleEvent;
@@ -41,7 +38,9 @@ import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.GeometryFactory;
 
 public class FeatureSelectTool extends Manager {
+	@SuppressWarnings("unused")
 	private double x1;
+	@SuppressWarnings("unused")
 	private double y1;
 	private boolean pointFound;
 	private boolean lineFound;
@@ -207,6 +206,7 @@ public class FeatureSelectTool extends Manager {
 		
 	}
 	
+	@SuppressWarnings("unused")
 	private void intersectGeom(Geometry polygon) throws Exception{
 		GetFeatureEvent getLine = new GetFeatureEvent(this, "LINE");
 		GetFeatureEvent getPoint = new GetFeatureEvent(this, "POINT");

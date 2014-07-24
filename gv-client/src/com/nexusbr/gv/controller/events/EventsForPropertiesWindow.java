@@ -11,6 +11,7 @@ import com.nexusbr.gv.view.components.PropertiesWindow;
 
 public class EventsForPropertiesWindow implements ItemListener, ActionListener, PropertyChangeListener {
 	
+	@SuppressWarnings("unused")
 	private PropertiesWindow propertiesWindow;
 	
 	public EventsForPropertiesWindow(PropertiesWindow properties){

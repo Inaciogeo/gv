@@ -55,11 +55,14 @@ public class PropertiesWindow extends JDialog {
 	JPanel panelGeometry;
 	private JTextField txtType;
 	//private JTextField txtLayer;
+	@SuppressWarnings("rawtypes")
 	private JComboBox cmbLayer;
 	private EachRowEditor rowEditor;
+	@SuppressWarnings("unused")
 	private JLabel lblLayer;
 	private JTable tableAttributes;
 	JScrollPane scrollAttributes;	
+	@SuppressWarnings("unused")
 	private EventsForPropertiesWindow event;
 	private JButton btnSave;
 	private String layerSelected = null;
@@ -212,7 +215,7 @@ public class PropertiesWindow extends JDialog {
 	 * 
 	 * @param repID 1( polygon), 2 (line), 3 (point)
 	 */
-	@SuppressWarnings("unchecked")
+	
 	public void popCmbLayer(Long repID){
 		/*if(cmbLayer.getItemCount()>1)
 			for(int i=1;i<cmbLayer.getItemCount();i++)
@@ -265,7 +268,7 @@ public class PropertiesWindow extends JDialog {
 	 * verify if the geometry has attributes
 	 * @param tableStorage
 	 */
-	@SuppressWarnings({ "unchecked", "rawtypes" })
+	
 	private void verifyIfGeomHasAttribute(String tableStorage){
 		/*String tableValueName = tableStorage;			
 		HashMap<String, String> dynAttr = (HashMap<String, String>) feature.getAttribute("dynamicAttributes");		
@@ -803,6 +806,7 @@ public class PropertiesWindow extends JDialog {
 	/**
 	 * @return the cmbLayer
 	 */
+	@SuppressWarnings("rawtypes")
 	public JComboBox getCmbLayer() {
 		return cmbLayer;
 	}

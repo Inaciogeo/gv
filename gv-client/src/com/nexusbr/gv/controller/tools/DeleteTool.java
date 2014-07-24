@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.EventObject;
 import java.util.List;
 
-import javax.swing.JOptionPane;
-
 import org.geotools.data.simple.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureIterator;
 import org.opengis.feature.simple.SimpleFeature;

@@ -1,6 +1,10 @@
 package com.nexusbr.gv.services;
 
 import java.awt.Color;
+import java.io.File;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.styling.ExternalGraphic;
@@ -13,6 +17,7 @@ import org.geotools.styling.Mark;
 import org.geotools.styling.PointSymbolizer;
 import org.geotools.styling.PolygonSymbolizer;
 import org.geotools.styling.Rule;
+import org.geotools.styling.SLDParser;
 import org.geotools.styling.Stroke;
 import org.geotools.styling.Style;
 import org.geotools.styling.StyleBuilder;
@@ -25,13 +30,12 @@ public class CreateFeatureStyle  {
 	private static StyleFactory styleFactory = CommonFactoryFinder.getStyleFactory(null);
 	private static FilterFactory filterFactory = CommonFactoryFinder.getFilterFactory(null);
 	    
-    public Style createLineStyle()
-    {            
+    public Style createLineStyle(){            
         Stroke stroke;
         LineSymbolizer lineSymbolizer;
         
-        // LINE REDE
-    	stroke = styleFactory.createStroke(filterFactory.literal(new Color(124,252,0)), filterFactory.literal(10));
+        //LINE
+    	stroke = styleFactory.createStroke(filterFactory.literal(new Color(124,252,100)), filterFactory.literal(2));
         lineSymbolizer = styleFactory.createLineSymbolizer(stroke, null);
         Rule rule = styleFactory.createRule();
         rule.setName("Line");        
@@ -39,16 +43,6 @@ public class CreateFeatureStyle  {
         rule.setFilter(filterFactory.equals(filterFactory.property("selected"), filterFactory.literal(false)));
         rule.symbolizers().add(lineSymbolizer);
         
-        // LINE RAMAIS
-//    	stroke = styleFactory.createStroke(filterFactory.literal(new Color(0,100,0)), filterFactory.literal(3));
-//        lineSymbolizer = styleFactory.createLineSymbolizer(stroke, null);
-//        Rule ruleR = styleFactory.createRule();
-//        ruleR.setName("Line Ramais");        
-//        ruleR.setTitle("Line Ramais");
-//        ruleR.setFilter(filterFactory.equals(filterFactory.property("selected"), filterFactory.literal(false)));
-//        ruleR.symbolizers().add(lineSymbolizer);
-
-        // SELECTED LINE
     	stroke = styleFactory.createStroke(filterFactory.literal(new Color(255,0,0)), filterFactory.literal(4));
         lineSymbolizer = styleFactory.createLineSymbolizer(stroke, null);
         Rule ruleSelected = styleFactory.createRule();
@@ -60,6 +54,35 @@ public class CreateFeatureStyle  {
         FeatureTypeStyle ftsLine = styleFactory.createFeatureTypeStyle(new Rule[]{rule,ruleSelected});
         Style style = styleFactory.createStyle();
         style.featureTypeStyles().add(ftsLine);        
+        return style;
+    }
+    
+    public Style createLineStyle2(){            
+        Stroke stroke;
+        LineSymbolizer lineSymbolizer;
+        
+        // LINE REDE
+//    	stroke = styleFactory.createStroke(filterFactory.literal(new Color(124,252,100)), filterFactory.literal(10));
+//        lineSymbolizer = styleFactory.createLineSymbolizer(stroke, null);
+//        Rule rule = styleFactory.createRule();
+//        rule.setName("Line");        
+//        rule.setTitle("Line");
+//        rule.setFilter(filterFactory.equals(filterFactory.property("selected"), filterFactory.literal(false)));
+//        rule.symbolizers().add(lineSymbolizer);
+        
+    	stroke = styleFactory.createStroke(filterFactory.literal(new Color(255,100,0)), filterFactory.literal(4));
+        lineSymbolizer = styleFactory.createLineSymbolizer(stroke, null);
+        Rule ruleSelected = styleFactory.createRule();
+        ruleSelected.setName("Line Selected");
+        ruleSelected.setTitle("Line Selected");
+        ruleSelected.setFilter(filterFactory.notEqual(filterFactory.property("nome_logradouro"), filterFactory.literal("")));
+        ruleSelected.symbolizers().add(lineSymbolizer);
+        
+        FeatureTypeStyle ftsLine = styleFactory.createFeatureTypeStyle(new Rule[]{ruleSelected});
+        Style style = styleFactory.createStyle();
+       
+        style.featureTypeStyles().add(ftsLine);
+        
         return style;
     }
     
@@ -132,6 +155,77 @@ public class CreateFeatureStyle  {
         Style style = styleFactory.createStyle();
         style.featureTypeStyles().add(fts);                
         return style;
+    }
+    public Style createPointStyle2() throws URISyntaxException 
+    {
+    	Graphic gr;
+    	Mark mark;
+    	PointSymbolizer pointSymbolizer;
+    
+    	//POINT CAP
+        gr = styleFactory.createDefaultGraphic();
+        mark = styleFactory.getSquareMark();
+        mark.setStroke(styleFactory.createStroke(filterFactory.literal(Color.BLACK), filterFactory.literal(2)));
+        mark.setFill(styleFactory.createFill(filterFactory.literal(new Color(255,36,0))));
+        gr.graphicalSymbols().clear();
+        gr.graphicalSymbols().add(mark);
+        gr.setSize(filterFactory.literal(10));
+        pointSymbolizer = styleFactory.createPointSymbolizer(gr, null);        
+        Rule ruleCAP = styleFactory.createRule();
+        ruleCAP.setName("PointCAP");        
+        ruleCAP.setTitle("PointCAP");             
+        ruleCAP.setFilter(filterFactory.equals(filterFactory.property("descric"), filterFactory.literal("CAP")));            
+        ruleCAP.symbolizers().add(pointSymbolizer);
+        
+        //POINT TE
+        gr = styleFactory.createDefaultGraphic();
+        mark = styleFactory.getTriangleMark();
+        mark.setStroke(styleFactory.createStroke(filterFactory.literal(Color.BLACK), filterFactory.literal(2)));
+        mark.setFill(styleFactory.createFill(filterFactory.literal(Color.BLUE)));
+        gr.graphicalSymbols().clear();
+        gr.graphicalSymbols().add(mark);
+        gr.setSize(filterFactory.literal(14));
+        pointSymbolizer = styleFactory.createPointSymbolizer(gr, null);
+        Rule ruleTE = styleFactory.createRule();
+        ruleTE.setName("PointTE");
+        ruleTE.setTitle("PointTE");
+        ruleTE.setFilter(filterFactory.equals(filterFactory.property("descric"), filterFactory.literal("TE")));        
+        ruleTE.symbolizers().add(pointSymbolizer);
+        
+      //POINT default
+        gr = styleFactory.createDefaultGraphic();
+        mark = styleFactory.getCircleMark();
+        mark.setStroke(styleFactory.createStroke(filterFactory.literal(Color.BLACK), filterFactory.literal(2)));
+        mark.setFill(styleFactory.createFill(filterFactory.literal(Color.ORANGE)));
+        gr.graphicalSymbols().clear();
+        gr.graphicalSymbols().add(mark);
+        gr.setSize(filterFactory.literal(10));
+        pointSymbolizer = styleFactory.createPointSymbolizer(gr, null);
+        Rule ruleT = styleFactory.createRule();
+        ruleT.setName("PointTE");
+        ruleT.setTitle("PointTE"); 
+        ruleT.setElseFilter(true);
+        ruleT.symbolizers().add(pointSymbolizer);
+        
+        FeatureTypeStyle fts = styleFactory.createFeatureTypeStyle(new Rule[]{ruleCAP,ruleTE,ruleT});
+        Style style = styleFactory.createStyle();
+        style.featureTypeStyles().add(fts);                
+        return style;
+    }
+    public Style createPointStyle3() 
+    {	
+    	 SLDParser stylereader = null; //We use SLDParser instead of SLDStyle
+    	
+    	    try {
+    	    	File file = new File("IconSLD.sld");  
+    	    	URL url = new URL("file:"+file.getAbsoluteFile());
+    	        stylereader = new SLDParser(styleFactory, url );
+    	    } catch (IOException e) {
+    	        e.printStackTrace();
+    	    }
+    	    Style[] style = stylereader.readXML();
+
+        return style[0];
     }
     
     public Style createGhostPointStyle() {
@@ -241,7 +335,7 @@ public class CreateFeatureStyle  {
     }    
     
     public Style createSnapPointStyle() {
-    	//Objeto que define como uma geometria ou um raster devem ser exibidos, com rela��o a cores, tamanho, etc.
+    	//Objeto que define como uma geometria ou um raster devem ser exibidos, com relacao a cores, tamanho, etc.
         Graphic gr = styleFactory.createDefaultGraphic();
         Mark mark;
         

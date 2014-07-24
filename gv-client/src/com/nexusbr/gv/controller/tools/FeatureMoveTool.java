@@ -120,9 +120,9 @@ public class FeatureMoveTool extends Manager {
 		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createGhostLineStyle(), "GHOSTLINE"));
 		
 		// LOCATE OBJECTS IN SCREEN		
-		ShowPointFeatures( locatePoints() );
-		ShowLineFeatures( locateLines() );
-		ShowPolygonFeatures( locatePolygons() );
+		//ShowPointFeatures( locatePoints() );
+		//ShowLineFeatures( locateLines() );
+		//ShowPolygonFeatures( locatePolygons() );
 	}
 	
 	private void handle(MouseDraggedEvent e) throws Exception{	

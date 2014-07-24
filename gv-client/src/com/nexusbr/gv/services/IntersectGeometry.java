@@ -84,7 +84,6 @@ public class IntersectGeometry {
 		return found;
 	}
 
-	@SuppressWarnings("unchecked")
 	public boolean checkFirstLine(Geometry polygon,	SimpleFeatureCollection lineCollection, SimpleFeatureCollection pointCollection) {
 		boolean foundNW = false;
 		SimpleFeatureIterator iterator = lineCollection.features();

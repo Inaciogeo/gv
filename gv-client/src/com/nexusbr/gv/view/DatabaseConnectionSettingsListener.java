@@ -12,7 +12,6 @@ public class DatabaseConnectionSettingsListener implements ActionListener {
 	private DatabaseConnectionSettings connectionDB_UI;
 	
 	
-
 	public DatabaseConnectionSettingsListener(DatabaseConnectionSettings dbSettings){
 		
 		this.connectionDB_UI = dbSettings;

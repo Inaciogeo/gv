@@ -16,7 +16,6 @@ import br.org.funcate.eagles.kernel.listener.ListenersHandlerImpl;
 import br.org.funcate.eagles.kernel.transmitter.DirectedEventTransmitter;
 import br.org.funcate.glue.event.AfterToolChangedEvent;
 import br.org.funcate.glue.main.AppSingleton;
-import br.org.funcate.glue.model.Layer;
 import br.org.funcate.glue.model.Representation;
 import br.org.funcate.glue.model.tree.CustomNode;
 import br.org.funcate.glue.view.NodeType;
@@ -28,7 +27,7 @@ import com.nexusbr.gv.controller.Manager;
 import com.nexusbr.gv.services.ChangesCommitService;
 import com.nexusbr.gv.singleton.GVSingleton;
 import com.vividsolutions.jts.geom.Geometry;
-import com.vividsolutions.jts.operation.valid.RepeatedPointTester;
+
 
 /**
  * 
@@ -225,6 +224,7 @@ public class CommitTool extends Manager{
 	 * Replace Saved Points, updating the id
 	 * @throws Exception
 	 */
+	@SuppressWarnings("unused")
 	private void replacePoints() throws Exception{		
 		SimpleFeatureCollection pointCollection = getCollection("POINT");		
 		ArrayList<FeatureDTO> feat = locatePoints();
@@ -249,6 +249,7 @@ public class CommitTool extends Manager{
 	 * Replace Saved Line, updating the id
 	 * @throws Exception
 	 */
+	@SuppressWarnings("unused")
 	private void replaceLines() throws Exception{		
 		SimpleFeatureCollection collection = getCollection("LINE");		
 		ArrayList<FeatureDTO> feat = locateLines();		
@@ -273,6 +274,7 @@ public class CommitTool extends Manager{
 	 * Replace Saved Polygon, updating the id
 	 * @throws Exception
 	 */
+	@SuppressWarnings("unused")
 	private void replacePolygon() throws Exception{		
 		SimpleFeatureCollection collection = getCollection("POLYGON");		
 		ArrayList<FeatureDTO> feat = locateLines();

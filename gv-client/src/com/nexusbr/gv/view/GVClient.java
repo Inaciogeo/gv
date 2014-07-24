@@ -50,6 +50,7 @@ public class GVClient implements EventDispatcher, EventListener{
 	private ToolbarWindow toolbarPanel;
 	private Locale currentLocale;
 	private ResourceBundle language;
+	@SuppressWarnings("unused")
 	private EventTransmitter transmitter;
 	private ListenersHandler listeners;
 	private EventHandler eventHandler;
@@ -148,9 +149,8 @@ public class GVClient implements EventDispatcher, EventListener{
 				GluePluginService.setCurrentTool(new DeleteTool());
 				idsOld = ids;
 			}
-			
-			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createLineStyle(), "LINE"));
 			manager.ShowLineFeaturesByID(manager.locateLinesByID(ids));	
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createLineStyle(), "LINE"));
 			manager.dispatchLayersFeedback();
 			manager.dispatchLayersEdition();
 		}	
@@ -175,15 +175,14 @@ public class GVClient implements EventDispatcher, EventListener{
 			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createGhostPointStyle(), "GHOSTPOINT"));
 			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createGhostLineStyle(), "GHOSTLINE"));
 			
-			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPointStyle(), "POINT"));
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPointStyle3(), "POINT"));
 			manager.ShowPointFeatures(manager.locatePoints());
 			
 			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createLineStyle(), "LINE"));
 			manager.ShowLineFeatures(manager.locateLines());
-			ArrayList<String> ids = new ArrayList<String>();
-			ids.add("100");
-			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPolygonStyle(), "POLYGON"));
-			manager.ShowPolygonFeaturesByID(manager.locatePolygonsByID(ids));
+			
+//			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPolygonStyle(), "POLYGON"));
+//			manager.ShowPolygonFeaturesByID(manager.locatePolygonsByID(ids));
 			
 			manager.dispatchLayersFeedback();
 			manager.dispatchLayersEdition();
@@ -198,6 +197,8 @@ public class GVClient implements EventDispatcher, EventListener{
 	 * This method create a geovector toolbar.
 	 * @return toolbarPanel a <code>JPanel</code> Component
 	 */
+	
+	@SuppressWarnings("unused")
 	private JPanel createToolbar()
 	{			
 		toolbarPanel.createToolBar();
@@ -234,9 +235,9 @@ public class GVClient implements EventDispatcher, EventListener{
 		 streetIds = e.getLineIds(); 
 		 lotIds = e.getPolygonIds();
 		 try {
-			 if(!streetIds.isEmpty())
+			 if(streetIds!=null)
 				drawFeatureLineById(streetIds);
-			 if(!lotIds.isEmpty())
+			 if(lotIds!=null)
 				drawFeaturePolygonById(lotIds);
 				
 			} catch (Exception e1) {
@@ -275,6 +276,7 @@ public class GVClient implements EventDispatcher, EventListener{
 	private void handle(SelectedThemeEvent event){
 		updateSelectedThemes();		
 	}
+	
 	private static double oldx1;
 	private static double oldy1;
 
@@ -284,28 +286,25 @@ public class GVClient implements EventDispatcher, EventListener{
 		
 		boolean editIsSet = GVSingleton.getInstance().getToolbar().isShowing();
 		double scale = Math.round(AppSingleton.getInstance().getCanvasState().getScale());
-		String proj = AppSingleton.getInstance().getCanvasState().getProjection().getName();
 		double x1 = AppSingleton.getInstance().getCanvasState().getBox().getX1();	
 		double y1 = AppSingleton.getInstance().getCanvasState().getBox().getY1();
 		
+		@SuppressWarnings("unused")
 		double difX1 = Math.abs(oldx1 - x1);
+		@SuppressWarnings("unused")
 		double difY1 = Math.abs(oldy1 - y1);
 		
-		 if(proj.equals("LatLong"))
-			 showScaleValue = 123;
-		 else if(proj.equals("UTM"))
-			 showScaleValue = 141;
+		showScaleValue = 10;
 		 
 		 if(scale<=showScaleValue && !lock ){
 			 start = true;
 			 lock = true;
 		 }
-		 showScaleValue = 50;
 		 
-		if(scale<=showScaleValue && !editIsSet && (difX1 > 630 || difY1 > 140) || start){
+		if(scale<=showScaleValue && !editIsSet /*&& (difX1 > 430 || difY1 > 220)*/ || start){
 			oldx1 = AppSingleton.getInstance().getCanvasState().getBox().getX1();
 			oldy1 = AppSingleton.getInstance().getCanvasState().getBox().getY1();
-			//initFeatures();
+			initFeatures();
 			start = false;
 		}
 	}
@@ -333,9 +332,9 @@ public class GVClient implements EventDispatcher, EventListener{
 	private void updateSelectedThemes() {
 		try {
 			//manager.clear();
-			manager.ShowLineFeatures(manager.locateLines());
-			manager.ShowPointFeatures(manager.locatePoints());
-			manager.ShowPolygonFeatures(manager.locatePolygons());
+			//manager.ShowLineFeatures(manager.locateLines());
+			//manager.ShowPointFeatures(manager.locatePoints());
+			//manager.ShowPolygonFeatures(manager.locatePolygons());
 
 			manager.dispatchLayersEdition();
 		} catch (Exception e) {

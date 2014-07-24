@@ -13,11 +13,8 @@ import javax.swing.JToolBar;
 
 import org.opengis.feature.simple.SimpleFeature;
 
-import br.org.funcate.glue.view.MainPanel;
-
 import com.nexusbr.gv.controller.events.EventsForToolbarWindow;
 import com.nexusbr.gv.singleton.GVSingleton;
-import com.nexusbr.gv.view.GVClient;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -301,7 +298,7 @@ public class ToolbarWindow extends JPanel{
 		btnGroup.add(btnInsPoint);
 		
 
-		toolMain.add(btnAddLayers);    	
+		//toolMain.add(btnAddLayers);    	
 		toolMain.add(btnProperties);    	
 		toolMain.add(btnDashed1); //dashedLine
 		toolMain.add(btnSave);
@@ -318,7 +315,7 @@ public class ToolbarWindow extends JPanel{
 		toolMain.add(btnDPoly);
 		toolMain.add(btnDNetwork);
 		toolMain.add(btnInsPoint);
-		toolMain.add(tglbtnEdition);
+		//toolMain.add(tglbtnEdition);
 		toolMain.add(separator);
 
 		//ENABLING BUTTONS

@@ -6,8 +6,6 @@ import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.EventObject;
 
-import javax.swing.JOptionPane;
-
 import org.geotools.data.simple.SimpleFeatureCollection;
 import org.geotools.feature.FeatureCollections;
 import org.opengis.feature.simple.SimpleFeature;

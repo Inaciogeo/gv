@@ -237,6 +237,7 @@ public class Manager implements Tool {
 					}
 
 					// VERIFY IF THERE ALREADY EXIST THE POINT IN SCREEN
+					@SuppressWarnings("unused")
 					ArrayList<String> listIDs = getFeaturesID("POINT",
 							GVSingleton.getInstance().getPointIDs());
 
@@ -281,6 +282,7 @@ public class Manager implements Tool {
 					}
 
 					// VERIFY IF THERE ALREADY EXIST THE POINT IN SCREEN
+					@SuppressWarnings("unused")
 					ArrayList<String> listIDs = getFeaturesID("LINE",
 							GVSingleton.getInstance().getLineIDs());
 
@@ -305,7 +307,7 @@ public class Manager implements Tool {
 		List<Theme> themes = view.getThemes();
 		
 		for (Theme theme : themes) {
-			if(theme.getId()==13){ // ID do tema de arruamentos,(id gerado no banco para o tema de arruamentos). 
+			if(theme.getId() == 13){ // ID do tema de arruamentos,(id gerado no banco para o tema de arruamentos). 
 				th = theme;
 			}
 		}
@@ -358,6 +360,7 @@ public class Manager implements Tool {
 					}
 
 					// VERIFY IF THERE ALREADY EXIST THE POINT IN SCREEN
+					@SuppressWarnings("unused")
 					ArrayList<String> listIDs = getFeaturesID("POLYGON",GVSingleton.getInstance().getPolygonIDs());
 
 					// GET FEATURES From Object Ids
@@ -376,7 +379,7 @@ public class Manager implements Tool {
 		List<Theme> themes = view.getThemes();
 		
 		for (Theme theme : themes) {
-			if(theme.getId()==12){ // ID do tema lotes: id gerado no modelo bd.
+			if(theme.getId()==14){ // ID do tema lotes: id gerado no modelo bd.
 				th = theme;
 			}
 		}
@@ -387,6 +390,7 @@ public class Manager implements Tool {
 		}
 
 		// VERIFY IF THERE ALREADY EXIST THE POINT IN SCREEN
+		@SuppressWarnings("unused")
 		ArrayList<String> listIDs = getFeaturesID("POLYGON",GVSingleton.getInstance().getPolygonIDs());
 
 		// GET FEATURES From Object Ids
@@ -422,15 +426,18 @@ public class Manager implements Tool {
 			
 			if(!object_id_point.isEmpty() && object_id_point != null && object_id_point !=""){
 				idPoint = Double.parseDouble(object_id_point);
+				
+				@SuppressWarnings("unused")
 				SimpleFeature feat = new PointCreatorService().createPoint(geom,
 						selected, networkMode, String.valueOf(idPoint));
-				dispatch(transmitter, new FeatureCreatedEvent(this, feat, "POINT", true));
+				dispatch(transmitter, new FeatureCreatedEvent(this, simpleFeature, "POINT", true));
 				
 			}else{
 				
+				@SuppressWarnings("unused")
 				SimpleFeature feat = new PointCreatorService().createPoint(geom,
 						selected, networkMode,simpleFeature.getID());
-				dispatch(transmitter, new FeatureCreatedEvent(this, feat, "POINT", true));
+				dispatch(transmitter, new FeatureCreatedEvent(this, simpleFeature, "POINT", true));
 			}		
 			
 		}

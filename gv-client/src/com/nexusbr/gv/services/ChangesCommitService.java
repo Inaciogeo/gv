@@ -2,20 +2,16 @@ package com.nexusbr.gv.services;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
 
-import javax.sound.sampled.Line;
 import javax.swing.JOptionPane;
 
 import org.geotools.data.simple.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureIterator;
-import org.geotools.filter.IsNullImpl;
 import org.geotools.filter.identity.FeatureIdImpl;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.filter.identity.FeatureId;
@@ -35,7 +31,6 @@ import br.org.funcate.jtdk.model.FeatureManipulationService;
 import br.org.funcate.jtdk.model.FeatureTransformer;
 import br.org.funcate.jtdk.model.dto.FeatureDTO;
 
-import com.vividsolutions.jts.geom.LineString;
 import com.vividsolutions.jts.geom.Point;
 
 public class ChangesCommitService{
@@ -243,6 +238,7 @@ public class ChangesCommitService{
 		}
 	}
 	
+	@SuppressWarnings("unused")
 	private String getPointID(CustomNode theme, Point point){
 		String id = "";
 		CanvasState canvas = AppSingleton.getInstance().getCanvasState();

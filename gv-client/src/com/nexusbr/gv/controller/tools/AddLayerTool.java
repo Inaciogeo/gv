@@ -35,6 +35,7 @@ public class AddLayerTool extends Manager {
 			handle((AfterToolChangedEvent) e);
 		}
 	}
+	@SuppressWarnings("unused")
 	private void handle(AfterToolChangedEvent e) throws Exception{
 		//testando 1 2 3
 		List<Layer> layers = AppSingleton.getInstance().getTreeState().getLayers();
@@ -88,6 +89,7 @@ public class AddLayerTool extends Manager {
 		
 	}
 	
+	@SuppressWarnings("unused")
 	private List<Attribute> getAttributes(){
 		List<Attribute> attributes = new ArrayList<Attribute>();
 		
