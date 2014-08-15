@@ -81,7 +81,6 @@ public class Manager implements Tool {
 		eventHandler = new EventHandler();
 		transmitter = new DirectedEventTransmitter(this);
 		featureManipulation = new FeatureManipulationService();
-
 	}
 
 	public Cursor getCursor() {
@@ -229,11 +228,10 @@ public class Manager implements Tool {
 					Box convertedBox = services.remapCoordinates(currentBox,
 							canvasProjection, layerProjection);
 
-					ArrayList<FeatureDTO> listObj = featureManipulation
-							.getFeatures(convertedBox, theme);
+					ArrayList<FeatureDTO> listObj = featureManipulation.getFeatures(convertedBox, theme);
+					
 					for (FeatureDTO feature : listObj) {
-						GVSingleton.getInstance().getPointIDs()
-								.add(feature.getObjectId());
+						GVSingleton.getInstance().getPointIDs().add(feature.getObjectId());
 					}
 
 					// VERIFY IF THERE ALREADY EXIST THE POINT IN SCREEN
@@ -275,7 +273,7 @@ public class Manager implements Tool {
 
 					TerraJavaClient services = AppSingleton.getInstance().getServices();
 					Box convertedBox = services.remapCoordinates(currentBox,canvasProjection,layerProjection);
-
+					
 					ArrayList<FeatureDTO> listObj = featureManipulation.getFeatures(convertedBox, theme);
 					for (FeatureDTO feature : listObj) {
 						GVSingleton.getInstance().getLineIDs().add(feature.getObjectId());
@@ -415,13 +413,17 @@ public class Manager implements Tool {
 			SimpleFeature simpleFeature = feature.getSimpleFeature();
 			Point point = (Point) simpleFeature.getDefaultGeometry();
 			Geometry geom = new PointCreatorService().createGeomPoint(new Coordinate(point.getX(), point.getY()));
-			
+		
 			boolean selected = false;
+			simpleFeature.setAttribute("selected", selected);
 			
-			Boolean networkMode = (Boolean) simpleFeature.getAttribute("networkmode");
-			if (networkMode == null){
-				networkMode = true;
-			}
+			Boolean network = true;
+//			if (network == null){
+//				network = true;
+//			}
+			
+			simpleFeature.setAttribute("network", network);
+			
 			object_id_point = simpleFeature.getAttribute("object_id").toString();
 			
 			if(!object_id_point.isEmpty() && object_id_point != null && object_id_point !=""){
@@ -429,14 +431,14 @@ public class Manager implements Tool {
 				
 				@SuppressWarnings("unused")
 				SimpleFeature feat = new PointCreatorService().createPoint(geom,
-						selected, networkMode, String.valueOf(idPoint));
+						selected, network, String.valueOf(idPoint));
 				dispatch(transmitter, new FeatureCreatedEvent(this, simpleFeature, "POINT", true));
 				
 			}else{
 				
 				@SuppressWarnings("unused")
 				SimpleFeature feat = new PointCreatorService().createPoint(geom,
-						selected, networkMode,simpleFeature.getID());
+						selected, network,simpleFeature.getID());
 				dispatch(transmitter, new FeatureCreatedEvent(this, simpleFeature, "POINT", true));
 			}		
 			
@@ -457,12 +459,12 @@ public class Manager implements Tool {
 			SimpleFeature simpleFeature = feature.getSimpleFeature();
 			LineString geom = (LineString) simpleFeature.getDefaultGeometry();
 			boolean selected = false;
-			Boolean networkMode = false;//(Boolean) simpleFeature.getAttribute("networkmode");
+			Boolean network = false;//(Boolean) simpleFeature.getAttribute("network");
 			
 			if (simpleFeature.getAttributes().size() > 15) {
-				networkMode = true;
-				 point1 = simpleFeature.getAttribute("noinic").toString();
-				 point2 = simpleFeature.getAttribute("nofinal").toString();
+				network = true;
+				 point1 = "";//simpleFeature.getAttribute("noinic").toString();
+				 point2 = "";// simpleFeature.getAttribute("nofinal").toString();
 			}
 			
 			object_id_line = simpleFeature.getAttribute("object_id").toString();
@@ -470,13 +472,13 @@ public class Manager implements Tool {
 			if(!object_id_line.isEmpty() && object_id_line != null && object_id_line !=""){
 				idLine = Double.parseDouble(object_id_line);
 				SimpleFeature feat = new LineCreatorService().createLine(
-						geom, selected, networkMode, point1, point2, String.valueOf(idLine), 
+						geom, selected, network, point1, point2, String.valueOf(idLine), 
 						new ArrayList<PointReference>(), new ArrayList<PointReference>());
 				
 				dispatch(transmitter, new FeatureCreatedEvent(this, feat, "LINE",true));
 			}else{
 				SimpleFeature feat = new LineCreatorService().createLine(
-						geom, selected, networkMode, point1, point2, simpleFeature.getID(), 
+						geom, selected, network, point1, point2, simpleFeature.getID(), 
 						new ArrayList<PointReference>(), new ArrayList<PointReference>());
 				
 				dispatch(transmitter, new FeatureCreatedEvent(this, feat, "LINE",true));
@@ -491,20 +493,20 @@ public class Manager implements Tool {
 			SimpleFeature simpleFeature = feature.getSimpleFeature();
 			LineString geom = (LineString) simpleFeature.getDefaultGeometry();
 			boolean selected = true;
-			Boolean networkMode = false;//(Boolean) simpleFeature.getAttribute("networkmode");
+			Boolean network = false;//(Boolean) simpleFeature.getAttribute("network");
 			
 			object_id_line = simpleFeature.getAttribute("object_id").toString();
 			
 			if(!object_id_line.isEmpty() && object_id_line != null && object_id_line !=""){
 				idLine = Double.parseDouble(object_id_line);
 				SimpleFeature feat = new LineCreatorService().createLine(
-						geom, selected, networkMode, point1, point2, String.valueOf(idLine), 
+						geom, selected, network, point1, point2, String.valueOf(idLine), 
 						new ArrayList<PointReference>(), new ArrayList<PointReference>());
 				
 				dispatch(transmitter, new FeatureCreatedEvent(this, feat, "LINE",true));
 			}else{
 				SimpleFeature feat = new LineCreatorService().createLine(
-						geom, selected, networkMode, point1, point2, simpleFeature.getID(), 
+						geom, selected, network, point1, point2, simpleFeature.getID(), 
 						new ArrayList<PointReference>(), new ArrayList<PointReference>());
 				
 				dispatch(transmitter, new FeatureCreatedEvent(this, feat, "LINE",true));

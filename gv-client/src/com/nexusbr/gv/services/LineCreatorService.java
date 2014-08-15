@@ -25,7 +25,7 @@ public class LineCreatorService {
 		
 		try {
 			TYPEline = DataUtilities.createType("Line", "geom:LineString,"
-					+ "selected:Boolean," + "networkMode:Boolean,"
+					+ "selected:Boolean," + "network:Boolean,"
 					+ "point1:String," + "point2:String," + "layerName:String,"
 					+ "point1Ref:java.util.ArrayList,"
 					+ "point2Ref:java.util.ArrayList");
@@ -55,7 +55,7 @@ public class LineCreatorService {
 		SimpleFeature feature = (SimpleFeatureBuilder.build(TYPEline,
 				new Object[] { new GeometryFactory().createLineString(coord), // GEOMETRY
 						otherFeature.getAttribute("selected"), // SELECTED
-						otherFeature.getAttribute("networkMode"), // NETWORK
+						otherFeature.getAttribute("network"), // NETWORK
 																	// MODE
 						otherFeature.getAttribute("point1"), // POINT 1 ID
 						otherFeature.getAttribute("point2"), // POINT 2 ID
@@ -73,7 +73,7 @@ public class LineCreatorService {
 		SimpleFeature feature = (SimpleFeatureBuilder.build(TYPEline,
 				new Object[] { (Geometry) otherFeature.getDefaultGeometry(), // GEOMETRY
 						otherFeature.getAttribute("selected"), // SELECTED
-						otherFeature.getAttribute("networkMode"), // NETWORK
+						otherFeature.getAttribute("network"), // NETWORK
 																	// MODE
 						otherFeature.getAttribute("point1"), // POINT 1 ID
 						otherFeature.getAttribute("point2"), // POINT 2 ID
@@ -87,12 +87,12 @@ public class LineCreatorService {
 	}
 
 	public SimpleFeature createLine(Geometry geom, boolean selected,
-			boolean networkMode, String point1, String point2, String ID,
+			boolean network, String point1, String point2, String ID,
 			ArrayList<PointReference> p1Ref, ArrayList<PointReference> p2Ref ) {
 		
 		SimpleFeature feature = (SimpleFeatureBuilder.build(TYPEline,
 				new Object[] { geom, // GEOMETRY
-						selected, networkMode, // is NETWORK
+						selected, network, // is NETWORK
 						point1, // is POINT 1
 						point2, // is POINT 2
 						p1Ref, // Point 1 References
@@ -172,7 +172,7 @@ public class LineCreatorService {
 		SimpleFeature feature = (SimpleFeatureBuilder.build(TYPEline,
 				new Object[] { defaultGeometry, // GEOMETRY
 						otherFeature.getAttribute("selected"), // SELECTED
-						otherFeature.getAttribute("networkMode"), // NETWORK
+						otherFeature.getAttribute("network"), // NETWORK
 																	// MODE
 						otherFeature.getAttribute("point1"), // POINT 1 ID
 						otherFeature.getAttribute("point2"), // POINT 2 ID

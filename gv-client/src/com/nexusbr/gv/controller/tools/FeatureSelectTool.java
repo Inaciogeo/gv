@@ -1,6 +1,9 @@
 package com.nexusbr.gv.controller.tools;
 
 import java.awt.Cursor;
+import java.awt.Image;
+import java.awt.Point;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.EventObject;
@@ -24,6 +27,7 @@ import br.org.funcate.glue.event.MouseDraggedEvent;
 import br.org.funcate.glue.event.MousePressedEvent;
 import br.org.funcate.glue.event.MouseReleasedEvent;
 import br.org.funcate.glue.main.AppSingleton;
+import br.org.funcate.jtdk.edition.event.FeatureCreatedEvent;
 import br.org.funcate.jtdk.edition.event.FeatureRemovedEvent;
 import br.org.funcate.jtdk.edition.event.GetFeatureEvent;
 import br.org.funcate.jtdk.edition.event.SetStyleEvent;
@@ -37,10 +41,9 @@ import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.GeometryFactory;
 
+@SuppressWarnings("unused")
 public class FeatureSelectTool extends Manager {
-	@SuppressWarnings("unused")
 	private double x1;
-	@SuppressWarnings("unused")
 	private double y1;
 	private boolean pointFound;
 	private boolean lineFound;
@@ -51,7 +54,7 @@ public class FeatureSelectTool extends Manager {
 	private SimpleFeature selectBox;
 	private List<SimpleFeature> listToDelete;
 	private List<SimpleFeature> listToDelete2;
-	private double    precision;
+	private double precision;
 	
 	public FeatureSelectTool(){
 		
@@ -70,7 +73,16 @@ public class FeatureSelectTool extends Manager {
 		eventsToListen.add(KeyPressedEvent.class.getName());
 		
 		//CHANGE CURSOR TO PRESSED
-		cursor = Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR);
+		//Get the default toolkit
+		Toolkit toolkit = Toolkit.getDefaultToolkit();
+
+		//Load an image for the cursor
+		Image image = toolkit.getImage(FeatureSelectTool.class.getResource("/br/org/funcate/glue/image/cursorLigth.png"));
+		//cursor = Cursor.getPredefinedCursor(Cursor.CROSSHAIR_CURSOR);
+		
+		//Create the hotspot for the cursor
+		Point hotSpot = new Point(10,10);
+		cursor = toolkit.createCustomCursor(image, hotSpot, "Select");
 		
 		firstTimeIntersecting = true;
 		firstLineNW = false;
@@ -202,11 +214,10 @@ public class FeatureSelectTool extends Manager {
 		List<Object> listType = new ArrayList<Object>();
 		listType.add(polygon);
 		
-		selectBox =  selectBoxS.createPolygon(listType, null);
+		selectBox = selectBoxS.createPolygon(listType, null);
 		
 	}
 	
-	@SuppressWarnings("unused")
 	private void intersectGeom(Geometry polygon) throws Exception{
 		GetFeatureEvent getLine = new GetFeatureEvent(this, "LINE");
 		GetFeatureEvent getPoint = new GetFeatureEvent(this, "POINT");
@@ -219,16 +230,7 @@ public class FeatureSelectTool extends Manager {
 		SimpleFeatureCollection polygonCollection = getPolygon.getFeatureCollection();
 		
 		SimpleFeatureIterator iterator_ = pointCollection.features();
-//	    try {
-//	        while( iterator_.hasNext() ){
-//	            SimpleFeature feature = iterator_.next();
-//	            System.out.println(feature.getAttributes());
-//	        }
-//	    }
-//	    finally {
-//	        iterator_.close();
-//	    }
-		
+
 		if(firstTime){			
 			pointFound = true;
 			lineFound = false;
@@ -316,7 +318,6 @@ public class FeatureSelectTool extends Manager {
 					listToDelete2.add(featurePoint);									
 				} 
 			}
-			
 		}	
 		    	
 		if(listToDelete.size()>0){			

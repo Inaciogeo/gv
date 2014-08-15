@@ -149,8 +149,8 @@ public class FeatureMoveTool extends Manager {
 		else if(intersectedPointGeom)
     	{
 			//VERIFY IF IT'S NETWORK POINT OR NOT, AND REDIRECT IT
-			boolean networkMode = (Boolean) featIntersected.getAttribute("networkMode");
-			if(networkMode){
+			boolean network = (Boolean) featIntersected.getAttribute("network");
+			if(network){
 				//REMOVE
 				for(int i=0;i<ghostLines.size();i++)
 					dispatch(transmitter,  new FeatureRemovedEvent(this, ghostLines.get(i), "GHOSTLINE", false));				
@@ -199,8 +199,8 @@ public class FeatureMoveTool extends Manager {
     	}
 		else if(intersectedLineGeom){						
 			//VERIFY IF IT'S NETWORK LINE OR NOT, AND REDIRECT IT
-			boolean networkMode = (Boolean) featIntersected.getAttribute("networkMode");
-			if(networkMode){	
+			boolean network = (Boolean) featIntersected.getAttribute("network");
+			if(network){	
 				//REMOVE
 				ArrayList<SimpleFeature> auxP = ghostPoints;
 				ArrayList<SimpleFeature> auxL = ghostLines;
@@ -373,8 +373,8 @@ public class FeatureMoveTool extends Manager {
 			GVSingleton.getInstance().getPolygonEdited().add(beforeFeaturePolygon);
     	}
 		else if(intersectedPointGeom){
-			boolean networkMode = (Boolean) featIntersected.getAttribute("networkMode");
-			if(networkMode){
+			boolean network = (Boolean) featIntersected.getAttribute("network");
+			if(network){
 				//REMOVE				
 				ArrayList<SimpleFeature> auxL = ghostLines;				
 				for(int i=0;i<auxL.size();i++)
@@ -395,7 +395,7 @@ public class FeatureMoveTool extends Manager {
 				SimpleFeature aux = ghostPoint;
 				dispatch(transmitter,  new FeatureRemovedEvent(this, aux, "GHOSTPOINT", false));
 				afterFeaturePoint.add(new PointCreatorService().createPoint(ghostPoint));
-				afterFeaturePoint.get(0).setAttribute("networkMode", true);
+				afterFeaturePoint.get(0).setAttribute("network", true);
 				afterFeaturePoint.get(0).setAttribute("selected", false);
 				dispatch(transmitter, new FeatureEditedEvent(this, beforeFeaturePoint.get(0), afterFeaturePoint.get(0), "POINT", true));
 				GVSingleton.getInstance().getPointsEdited().add(afterFeaturePoint.get(0));			
@@ -403,15 +403,15 @@ public class FeatureMoveTool extends Manager {
 				SimpleFeature aux = ghostPoint;
 				dispatch(transmitter,  new FeatureRemovedEvent(this, aux, "GHOSTPOINT", false));
 				afterFeaturePoint.add(new PointCreatorService().createPoint(ghostPoint));
-				afterFeaturePoint.get(0).setAttribute("networkMode", false);
+				afterFeaturePoint.get(0).setAttribute("network", false);
 				afterFeaturePoint.get(0).setAttribute("selected", false);
 				dispatch(transmitter, new FeatureEditedEvent(this, beforeFeaturePoint.get(0), afterFeaturePoint.get(0), "POINT", true));
 				GVSingleton.getInstance().getPointsEdited().add(afterFeaturePoint.get(0));
 			}
     	}
 	    else if(intersectedLineGeom){
-	    	boolean networkMode = (Boolean) featIntersected.getAttribute("networkMode");
-			if(networkMode){
+	    	boolean network = (Boolean) featIntersected.getAttribute("network");
+			if(network){
 				//REMOVE
 				ArrayList<SimpleFeature> auxP = ghostPoints;
 				ArrayList<SimpleFeature> auxL = ghostLines;
@@ -435,7 +435,7 @@ public class FeatureMoveTool extends Manager {
 					for(int j=0;j<beforeFeaturePoint.size();j++){
 						if(ghostPoints.get(i).getID().equals(beforeFeaturePoint.get(j).getID())){
 							afterFeaturePoint.add(new PointCreatorService().createPoint((Geometry)ghostPoints.get(i).getDefaultGeometry(), beforeFeaturePoint.get(j)));
-							afterFeaturePoint.get(afterFeaturePoint.size()-1).setAttribute("networkMode", true);							
+							afterFeaturePoint.get(afterFeaturePoint.size()-1).setAttribute("network", true);							
 							dispatch(transmitter, new FeatureEditedEvent(this, beforeFeaturePoint.get(j), afterFeaturePoint.get(afterFeaturePoint.size()-1), "POINT", true));
 							GVSingleton.getInstance().getPointsEdited().add(afterFeaturePoint.get(j));
 							continue;
@@ -446,7 +446,7 @@ public class FeatureMoveTool extends Manager {
 				SimpleFeature aux = ghostLine;
 				dispatch(transmitter,  new FeatureRemovedEvent(this, aux, "GHOSTLINE", false));
 				afterFeatureLine.add(new LineCreatorService().createLine((Geometry)ghostLine.getAttribute(0), beforeFeatureLine.get(0)));
-				afterFeatureLine.get(0).setAttribute("networkMode", false);			
+				afterFeatureLine.get(0).setAttribute("network", false);			
 				dispatch(transmitter, new FeatureEditedEvent(this, beforeFeatureLine.get(0), afterFeatureLine.get(0), "LINE", true));
 				GVSingleton.getInstance().getLinesEdited().add(afterFeatureLine.get(0));
 			}
@@ -502,8 +502,8 @@ public class FeatureMoveTool extends Manager {
 		 		GVSingleton.getInstance().getToolbar().setFeature(featIntersected);		 		
 	    	}
 	    	else if(intersectedPointGeom){	    		
-	    		boolean networkMode = (Boolean) featIntersected.getAttribute("networkMode");	    		
-				if(networkMode){				
+	    		boolean network = (Boolean) featIntersected.getAttribute("network");	    		
+				if(network){				
 					
 					//CATCH THE LINE COLLECTION
 					GetFeatureEvent getLine = new GetFeatureEvent(this, "LINE");
@@ -559,8 +559,8 @@ public class FeatureMoveTool extends Manager {
 		 		GVSingleton.getInstance().getToolbar().setFeature(featIntersected);
 	    	}
 	    	else if(intersectedLineGeom){
-	    		boolean networkMode = (Boolean) featIntersected.getAttribute("networkMode");	    		
-				if(networkMode){
+	    		boolean network = (Boolean) featIntersected.getAttribute("network");	    		
+				if(network){
 					GetFeatureEvent getLine = new GetFeatureEvent(this, "LINE");
 					GetFeatureEvent getPoint = new GetFeatureEvent(this, "POINT");
 					dispatch(transmitter, getPoint);

@@ -1,0 +1,15 @@
+Couldn't recover features from dataset.
+java.lang.RuntimeException: Couldn't recover features from dataset.
+	at br.org.funcate.terrajava.persistencia.TerraJava.getFeaturesByIds(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.getFeaturesByIds(TerraJavaJNI.java:1338)
+	at br.org.funcate.glue.service.TerraJavaClient.getFeaturesByIds(TerraJavaClient.java:1335)
+	at br.org.funcate.jtdk.model.FeatureManipulationService.getFeatures(FeatureManipulationService.java:76)
+	at com.nexusbr.gv.controller.Manager.locatePolygonsByID(Manager.java:386)
+	at com.nexusbr.gv.view.GVClient.drawFeaturePolygonById(GVClient.java:158)
+	at com.nexusbr.gv.view.GVClient.handle(GVClient.java:248)
+	at com.nexusbr.gv.view.GVClient.handle(GVClient.java:238)
+	at br.org.funcate.eagles.kernel.transmitter.EventTransmitter.dispatch(EventTransmitter.java:65)
+	at br.org.funcate.eagles.kernel.transmitter.DirectedEventTransmitter.dispatch(DirectedEventTransmitter.java:39)
+	at br.org.funcate.glue.controller.CanvasController.dispatch(CanvasController.java:396)
+	at br.org.funcate.glue.controller.CanvasController.run(CanvasController.java:531)
+	at java.lang.Thread.run(Unknown Source)

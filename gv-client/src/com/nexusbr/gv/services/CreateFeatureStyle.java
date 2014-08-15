@@ -138,9 +138,9 @@ public class CreateFeatureStyle  {
         
         //POINT WITH SELECTED TRUE
         gr = styleFactory.createDefaultGraphic();
-        mark = styleFactory.getSquareMark();
+        mark = styleFactory.getCircleMark();
         mark.setStroke(styleFactory.createStroke(filterFactory.literal(Color.BLACK), filterFactory.literal(1)));
-        mark.setFill(styleFactory.createFill(filterFactory.literal(Color.RED)));
+        mark.setFill(styleFactory.createFill(filterFactory.literal(Color.BLUE)));
         gr.graphicalSymbols().clear();
         gr.graphicalSymbols().add(mark);
         gr.setSize(filterFactory.literal(10));
@@ -226,6 +226,19 @@ public class CreateFeatureStyle  {
     	    Style[] style = stylereader.readXML();
 
         return style[0];
+    }
+    public Style createLineStyle3(){
+    	 SLDParser stylereader = null; //We use SLDParser instead of SLDStyle
+	    try {
+	    	File file = new File("line.sld");  
+	    	URL url = new URL("file:"+file.getAbsoluteFile());
+	        stylereader = new SLDParser(styleFactory, url );
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	    Style[] style = stylereader.readXML();
+
+    return style[0];
     }
     
     public Style createGhostPointStyle() {

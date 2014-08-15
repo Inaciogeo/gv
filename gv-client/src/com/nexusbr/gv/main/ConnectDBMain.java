@@ -8,9 +8,7 @@ public class ConnectDBMain {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
 		DatabaseConnectionSettings.getInstance();
-
 	}
 
 }

@@ -14,7 +14,9 @@ import br.org.funcate.glue.model.tree.CustomNode;
 import br.org.funcate.jtdk.edition.event.FeatureCreatedEvent;
 import br.org.funcate.jtdk.edition.event.GetFeatureEvent;
 
+import com.nexusbr.gv.main.MainGV;
 import com.nexusbr.gv.singleton.GVSingleton;
+import com.nexusbr.gv.view.GVClient;
 import com.nexusbr.gv.view.components.ToolbarWindow;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.Geometry;
@@ -29,11 +31,9 @@ public class IntersectGeometry {
 	private SimpleFeature featureIntersected;
 	private Geometry geomintersection;
 	private ToolbarWindow toolbar = GVSingleton.getInstance().getToolbar();
+	
 
-	public IntersectGeometry(){
-
-	}		
-
+	
 	public boolean checkIntersection(Geometry polygon, SimpleFeatureCollection featureCollection, Boolean... lineNW) {
 		boolean found = false;		
 		SimpleFeatureIterator iterator = null; 
@@ -44,35 +44,38 @@ public class IntersectGeometry {
 				SimpleFeature feature = iterator.next();
 				Geometry geom = (Geometry) feature.getDefaultGeometry();				
 				if(polygon.intersects(geom)){
-					if(feature.getType().getTypeName().equals("Point")){
-						if(feature.getAttribute("networkMode").equals(true)){ 
+					if(geom.getGeometryType().equals("Point")){
+						if(feature.getAttribute("network").equals("true")){ 
 							feature.setAttribute("selected", true);	
-							toolbar.setFeature(feature);
+							//toolbar.setFeature(feature);
+							SelectFeatureService.setFeatureId(feature.getAttribute("ip").toString());
+							GVClient gvClient = MainGV.getGVClientInstance();
+							gvClient.setSelectFeature();						
 							fillDynamicAttributes(4L);
 							found = true;	
 						}
 					}
-					else if(feature.getType().getTypeName().equals("Line")){
+					else if(geom.getGeometryType().equals("Line")){
 						if(lineNW[0]){
-							if(feature.getAttribute("networkMode").equals(true)){
+							if(feature.getAttribute("network").equals("true")){
 								feature.setAttribute("selected", true);
-								toolbar.setFeature(feature);
+								//toolbar.setFeature(feature);
 								fillDynamicAttributes(2L);
 								found = true;	
 							}
 						}
 						else{
-							if(feature.getAttribute("networkMode").equals(false)){
+							if(feature.getAttribute("network").equals("false")){
 								feature.setAttribute("selected", true);
-								toolbar.setFeature(feature);
+								//toolbar.setFeature(feature);
 								fillDynamicAttributes(2L);
 								found = true;	
 							}
 						}		     				     			
 					}	     			
-					else if(feature.getType().getTypeName().equals("Polygon")){
-						feature.setAttribute("selected", true);
-						toolbar.setFeature(feature);
+					else if(geom.getGeometryType().equals("Polygon")){
+						//feature.setAttribute("selected", true);
+						//toolbar.setFeature(feature);
 						fillDynamicAttributes(1L);
 						found = true;
 					}
@@ -92,7 +95,7 @@ public class IntersectGeometry {
 			SimpleFeature feature = iterator.next();
 			Geometry geom = (Geometry) feature.getDefaultGeometry();
 			if(polygon.intersects(geom)){
-				if(feature.getAttribute("networkMode").equals(true)){
+				if(feature.getAttribute("network").equals(true)){
 					foundNW = true;
 					String id1 = feature.getAttribute("point1").toString();
 					String id2 = feature.getAttribute("point2").toString();

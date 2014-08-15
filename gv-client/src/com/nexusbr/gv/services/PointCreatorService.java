@@ -17,7 +17,7 @@ public class PointCreatorService {
 
 	public PointCreatorService(){
 		try {
-			TYPEpoint = DataUtilities.createType("Point","geom:Point,selected:Boolean,networkMode:Boolean");
+			TYPEpoint = DataUtilities.createType("Point","geom:Point,selected:Boolean,network:Boolean");
 		} catch (SchemaException e) {}
 	}
 
@@ -40,15 +40,15 @@ public class PointCreatorService {
 		return feature;
 	}	
 	
-	public SimpleFeature createPoint(Geometry geom, boolean selected, boolean networkMode,String ID){
-		System.out.println("estamos em createPoint");
+	public SimpleFeature createPoint(Geometry geom, boolean selected, boolean network,String ID){
+		//System.out.println("estamos em createPoint");
 		SimpleFeature feature =
 				(SimpleFeatureBuilder.build(
 						TYPEpoint, 
 						new Object[]{ 
 								geom, //GEOMETRY 
 								selected, 	//is SELECTED
-								networkMode, 	//is NETWORK
+								network, 	//is NETWORK
 						},
 						ID	// ID AUTOMATICO
 						));
@@ -69,7 +69,7 @@ public class PointCreatorService {
 						new Object[]{ 
 								new GeometryFactory().createPoint(new Coordinate(x, y)), //GEOMETRY 
 								selected, //SELECTED
-								otherPoint.getAttribute("networkMode"), //NETWORK MODE
+								otherPoint.getAttribute("network"), //NETWORK MODE
 						},
 						otherPoint.getID()
 						));
@@ -89,7 +89,7 @@ public class PointCreatorService {
 						new Object[]{ 
 								new GeometryFactory().createPoint(coord), //GEOMETRY 
 								selected, //SELECTED
-								otherPoint.getAttribute("networkMode"), //NETWORK MODE
+								otherPoint.getAttribute("network"), //NETWORK MODE
 						},
 						otherPoint.getID()
 						));
@@ -109,7 +109,7 @@ public class PointCreatorService {
 						new Object[]{ 
 								geom, 
 								selected, //SELECTED
-								otherPoint.getAttribute("networkMode"), //NETWORK MODE
+								otherPoint.getAttribute("network"), //NETWORK MODE
 						},
 						otherPoint.getID()
 						));
@@ -128,7 +128,7 @@ public class PointCreatorService {
 						new Object[]{ 
 								(Geometry)otherPoint.getDefaultGeometry(),
 								selected, //SELECTED
-								otherPoint.getAttribute("networkMode"), //NETWORK MODE
+								otherPoint.getAttribute("network"), //NETWORK MODE
 						},
 						otherPoint.getID()
 						));

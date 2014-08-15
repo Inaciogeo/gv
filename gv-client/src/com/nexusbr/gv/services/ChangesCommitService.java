@@ -96,7 +96,7 @@ public class ChangesCommitService{
 		while(iterator.hasNext()){
 			
 			SimpleFeature feature = iterator.next();
-			isNetwork = (Boolean) feature.getAttribute("networkMode");
+			isNetwork = (Boolean) feature.getAttribute("network");
 	
 			if (themeNode.getTheme().getId() != 5 || !isNetwork) {
 				if (representation == 2 && idspoint.size()==p) {

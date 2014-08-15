@@ -214,10 +214,10 @@ public class PointCreatorTool extends Manager {
 						featIntersected = intGeom.getFeature();
 						
 						//VERIFY IF THE FEATURE IS A NETWORK
-						boolean state = (Boolean) featIntersected.getAttribute("networkMode");
+						boolean state = (Boolean) featIntersected.getAttribute("network");
 						if(state){
-							lastFeaturePoint.setAttribute("networkMode", true);
-							//lastFeaturePoint.setAttribute("networkMode", true);
+							lastFeaturePoint.setAttribute("network", true);
+							//lastFeaturePoint.setAttribute("network", true);
 							
 							//SAVE THE FIRST AND THE LAST COORDINATE OF THE NETWORK
 							Coordinate[] coord = ((Geometry)featIntersected.getDefaultGeometry()).getCoordinates();
@@ -240,14 +240,14 @@ public class PointCreatorTool extends Manager {
 								//CREATE FIRST LINE 
 								Coordinate[] newCoord = new Coordinate[]{new Coordinate(px1,py1),new Coordinate(x1,y1)};
 								lastFeatureLine = new LineCreatorService().createLine(newCoord, featIntersected);
-								lastFeatureLine.setAttribute("networkMode", true);
+								lastFeatureLine.setAttribute("network", true);
 								lastFeatureLine.setAttribute("point2", idPointOne);						
 								dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));							
 	
 								//CREATE SECOND LINE							
 								Coordinate[] newCoord2 = new Coordinate[]{new Coordinate(x1,y1),new Coordinate(px2,py2)};
 								lastFeatureLine = new LineCreatorService().createLine(newCoord2, featIntersected);
-								lastFeatureLine.setAttribute("networkMode", true);
+								lastFeatureLine.setAttribute("network", true);
 								lastFeatureLine.setAttribute("point1", idPointOne);	
 								dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));
 								
@@ -310,7 +310,7 @@ public class PointCreatorTool extends Manager {
 				featIntersected = intGeom.getFeature();
 				snapPointFound = false;	
 				
-				if((Boolean) featIntersected.getAttribute("networkMode")){
+				if((Boolean) featIntersected.getAttribute("network")){
 					//DRAW SNAP POINT		
 					SimpleFeature aux = snapPoint;
 					dispatch(transmitter,  new FeatureRemovedEvent(this, aux, "SNAPPOINT", false));

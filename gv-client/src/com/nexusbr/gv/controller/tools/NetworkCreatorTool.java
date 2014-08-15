@@ -253,7 +253,7 @@ public class NetworkCreatorTool extends Manager {
 						x1 = (double) geomIntersected.getCentroid().getCoordinate().x;			// SAVE NEW X FROM SCREEN
 						y1 = (double) geomIntersected.getCentroid().getCoordinate().y;			// SAVE NEW Y FROM SCREEN
 						lastFeaturePoint = new PointCreatorService().createPoint(x1, y1); //CREATE AND ADD POINT IN A COLLECTION
-						lastFeaturePoint.setAttribute("networkMode", true);					// SET ATTRIBUTE 2(NETWORK), TRUE
+						lastFeaturePoint.setAttribute("network", true);					// SET ATTRIBUTE 2(NETWORK), TRUE
 						idPointOne = lastFeaturePoint.getID();		// GET ID FROM THE POINT CREATED  	    			
 
 						ghostPoint = new PointCreatorService().createPoint(x1, y1);
@@ -273,7 +273,7 @@ public class NetworkCreatorTool extends Manager {
 							x1 = e.getX();		// SAVE NEW X FROM SCREEN
 							y1 = e.getY();		// SAVE NEW Y FROM SCREEN
 							lastFeaturePoint = new PointCreatorService().createPoint(x1, y1); //CREATE AND ADD POINT IN A COLLECTION
-							lastFeaturePoint.setAttribute("networkMode", true);					// SET ATTRIBUTE 2(NETWORK), TRUE
+							lastFeaturePoint.setAttribute("network", true);					// SET ATTRIBUTE 2(NETWORK), TRUE
 							idPointOne = lastFeaturePoint.getID();		// GET ID FROM THE POINT CREATED    			
 
 							ghostPoint = new PointCreatorService().createPoint(x1, y1);
@@ -297,14 +297,14 @@ public class NetworkCreatorTool extends Manager {
 							y2 = geomIntersected.getCentroid().getY();
 						//}
 						lastFeaturePoint = new PointCreatorService().createPoint(x2, y2); //CREATE AND ADD POINT IN A COLLECTION
-						lastFeaturePoint.setAttribute("networkMode", true);					// SET ATTRIBUTE 2(NETWORK), TRUE
+						lastFeaturePoint.setAttribute("network", true);					// SET ATTRIBUTE 2(NETWORK), TRUE
 						idPointTwo = lastFeaturePoint.getID();		// GET ID FROM THE POINT CREATED  
 						dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeaturePoint, "POINT", true));
 
 						//CREATE THE LINE
 						Coordinate[] newCoord0 = new Coordinate[]{new Coordinate(x1,y1),new Coordinate(x2,y2)};			
 						lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord0);
-						lastFeatureLine.setAttribute("networkMode", true);
+						lastFeatureLine.setAttribute("network", true);
 						lastFeatureLine.setAttribute("point1", idPointOne);
 						lastFeatureLine.setAttribute("point2", idPointTwo);
 						dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));
@@ -338,7 +338,7 @@ public class NetworkCreatorTool extends Manager {
 								//CREATE FIRST LINE 
 								Coordinate[] newCoord = new Coordinate[]{new Coordinate(px1,py1),new Coordinate(x1,y1)};		    
 								lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord);
-								lastFeatureLine.setAttribute("networkMode", true);
+								lastFeatureLine.setAttribute("network", true);
 								lastFeatureLine.setAttribute("point1", point1.getID());
 								lastFeatureLine.setAttribute("point2", idPointOne);
 								
@@ -347,7 +347,7 @@ public class NetworkCreatorTool extends Manager {
 								//CREATE SECOND LINE
 								Coordinate[] newCoord2 = new Coordinate[]{new Coordinate(x1,y1), new Coordinate(px2,py2)};
 								lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord2);
-								lastFeatureLine.setAttribute("networkMode", true);
+								lastFeatureLine.setAttribute("network", true);
 								lastFeatureLine.setAttribute("point1", idPointOne);
 								lastFeatureLine.setAttribute("point2", point2.getID());
 								
@@ -385,7 +385,7 @@ public class NetworkCreatorTool extends Manager {
 								//CREATE FIRST LINE 
 								Coordinate[] newCoord = new Coordinate[]{new Coordinate(px1,py1),new Coordinate(x2,y2)};	
 								lastFeatureLine = service.createFeatureLine(newCoord);
-								lastFeatureLine.setAttribute("networkMode", true);
+								lastFeatureLine.setAttribute("network", true);
 								lastFeatureLine.setAttribute("point1", point1.getID());
 								lastFeatureLine.setAttribute("point2", idPointTwo);
 								dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));
@@ -394,7 +394,7 @@ public class NetworkCreatorTool extends Manager {
 								Coordinate[] newCoord2 = new Coordinate[]{new Coordinate(x2,y2),new Coordinate(px2,py2)};
 								
 								lastFeatureLine = service.createFeatureLine(newCoord2);
-								lastFeatureLine.setAttribute("networkMode", true);
+								lastFeatureLine.setAttribute("network", true);
 								lastFeatureLine.setAttribute("point1", idPointTwo);
 								lastFeatureLine.setAttribute("point2", point2.getID());
 								dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));
@@ -431,7 +431,7 @@ public class NetworkCreatorTool extends Manager {
 							//CREATE THE LINE
 							Coordinate[] newCoord0 = new Coordinate[]{new Coordinate(x1,y1),new Coordinate(x2,y2)};
 							lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord0);
-							lastFeatureLine.setAttribute("networkMode", true);
+							lastFeatureLine.setAttribute("network", true);
 							lastFeatureLine.setAttribute("point1", idPointOne);
 							lastFeatureLine.setAttribute("point2", idPointTwo);
 							dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));
@@ -463,7 +463,7 @@ public class NetworkCreatorTool extends Manager {
 									//CREATE FIRST LINE 
 									Coordinate[] newCoord = new Coordinate[]{new Coordinate(px1,py1),new Coordinate(x1,y1)};
 									lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord);
-									lastFeatureLine.setAttribute("networkMode", true);
+									lastFeatureLine.setAttribute("network", true);
 									lastFeatureLine.setAttribute("point1", point1.getID());
 									lastFeatureLine.setAttribute("point2", idPointOne);
 									dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));
@@ -471,7 +471,7 @@ public class NetworkCreatorTool extends Manager {
 									//CREATE SECOND LINE
 									Coordinate[] newCoord2 = new Coordinate[]{new Coordinate(x1,y1),new Coordinate(px2,py2)};
 									lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord2);
-									lastFeatureLine.setAttribute("networkMode", true);
+									lastFeatureLine.setAttribute("network", true);
 									lastFeatureLine.setAttribute("point1", idPointOne);
 									lastFeatureLine.setAttribute("point2", point2.getID());	    					
 									dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));
@@ -498,14 +498,14 @@ public class NetworkCreatorTool extends Manager {
 								y2 = e.getY();
 							}
 							lastFeaturePoint = new PointCreatorService().createPoint(x2, y2); //CREATE AND ADD POINT IN A COLLECTION
-							lastFeaturePoint.setAttribute("networkMode", true);					// SET ATTRIBUTE 2(NETWORK), TRUE
+							lastFeaturePoint.setAttribute("network", true);					// SET ATTRIBUTE 2(NETWORK), TRUE
 							idPointTwo = lastFeaturePoint.getID();		// GET ID FROM THE POINT CREATED
 							dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeaturePoint, "POINT", true));
 
 							//CREATE THE LINE
 							Coordinate[] newCoord0 = new Coordinate[]{new Coordinate(x1,y1),new Coordinate(x2,y2)};
 							lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord0);
-							lastFeatureLine.setAttribute("networkMode", true);
+							lastFeatureLine.setAttribute("network", true);
 							lastFeatureLine.setAttribute("point1", idPointOne);
 							lastFeatureLine.setAttribute("point2", idPointTwo);	
 							
@@ -540,7 +540,7 @@ public class NetworkCreatorTool extends Manager {
 									// TODO COMO FUNCIONA A PARTIR DE UMA LINHA QUE NAO FAZ PARTE DE NETWORK 
 									Coordinate[] newCoord = new Coordinate[]{new Coordinate(px1,py1),new Coordinate(x1,y1)};
 									lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord);
-									lastFeatureLine.setAttribute("networkMode", true);
+									lastFeatureLine.setAttribute("network", true);
 									lastFeatureLine.setAttribute("point1", point1.getID());
 									lastFeatureLine.setAttribute("point2", idPointOne);	
 									dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));
@@ -548,7 +548,7 @@ public class NetworkCreatorTool extends Manager {
 									//CREATE SECOND LINE
 									Coordinate[] newCoord2 = new Coordinate[]{new Coordinate(x1,y1),new Coordinate(px2,py2)};
 									lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord2);
-									lastFeatureLine.setAttribute("networkMode", true);
+									lastFeatureLine.setAttribute("network", true);
 									lastFeatureLine.setAttribute("point1", idPointOne);
 									lastFeatureLine.setAttribute("point2", point2.getID());	
 									dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));
@@ -644,7 +644,7 @@ public class NetworkCreatorTool extends Manager {
 							y2 = e.getY();
 							lineVertice += x2+" "+y2+")";
 							lastFeaturePoint = new PointCreatorService().createPoint(x2, y2); //CREATE AND ADD POINT IN A COLLECTION
-							lastFeaturePoint.setAttribute("networkMode", true);					// SET ATTRIBUTE 2(NETWORK), TRUE
+							lastFeaturePoint.setAttribute("network", true);					// SET ATTRIBUTE 2(NETWORK), TRUE
 							idPointTwo = lastFeaturePoint.getID();		// GET ID FROM THE POINT CREATED
 							dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeaturePoint, "POINT", true));
 						}else{
@@ -658,14 +658,14 @@ public class NetworkCreatorTool extends Manager {
 						y2 = e.getY();
 						lineVertice += x2+" "+y2+")";
 						lastFeaturePoint = new PointCreatorService().createPoint(x2, y2); //CREATE AND ADD POINT IN A COLLECTION
-						lastFeaturePoint.setAttribute("networkMode", true);					// SET ATTRIBUTE 2(NETWORK), TRUE
+						lastFeaturePoint.setAttribute("network", true);					// SET ATTRIBUTE 2(NETWORK), TRUE
 						idPointTwo = lastFeaturePoint.getID();		// GET ID FROM THE POINT CREATED
 						dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeaturePoint, "POINT", true));
 					}
 
 					//CREATE THE LINE
 					lastFeatureLine = new LineCreatorService().createFeatureLine(new LineCreatorService().createLine(lineVertice).getCoordinates());
-					lastFeatureLine.setAttribute("networkMode", true);
+					lastFeatureLine.setAttribute("network", true);
 					lastFeatureLine.setAttribute("point1", idPointOne);
 					lastFeatureLine.setAttribute("point2", idPointTwo);	
 					dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));
@@ -695,7 +695,7 @@ public class NetworkCreatorTool extends Manager {
 									}				
 									newCoord[i+1] = new Coordinate(x1, y1);
 									lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord);
-									lastFeatureLine.setAttribute("networkMode", true);
+									lastFeatureLine.setAttribute("network", true);
 									lastFeatureLine.setAttribute("point1", ponto1.getID());
 									lastFeatureLine.setAttribute("point2", idPointOne);
 									dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));
@@ -708,7 +708,7 @@ public class NetworkCreatorTool extends Manager {
 										cont++;
 									}
 									lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord);
-									lastFeatureLine.setAttribute("networkMode", true);
+									lastFeatureLine.setAttribute("network", true);
 									lastFeatureLine.setAttribute("point1", idPointOne);
 									lastFeatureLine.setAttribute("point2", ponto2.getID());	
 									dispatch(transmitter,  new FeatureCreatedEvent(this, lastFeatureLine, "LINE", true));
@@ -724,7 +724,7 @@ public class NetworkCreatorTool extends Manager {
 							SimpleFeature ponto1 = new IntersectGeometry().intersectPointFeature(new GeometryFactory().createPoint(new Coordinate(px1, py1)), pointCollection);
 
 							lastFeatureLine = new LineCreatorService().createFeatureLine(new Coordinate[]{new Coordinate(px1, py1),new Coordinate(x1,y1)});
-							lastFeatureLine.setAttribute("networkMode", true);
+							lastFeatureLine.setAttribute("network", true);
 							lastFeatureLine.setAttribute("point1", ponto1.getID());
 							lastFeatureLine.setAttribute("point2", idPointOne);
 							
@@ -733,7 +733,7 @@ public class NetworkCreatorTool extends Manager {
 							SimpleFeature ponto2 = new IntersectGeometry().intersectPointFeature(new GeometryFactory().createPoint(new Coordinate(px2, py2)), pointCollection);
 
 							lastFeatureLine = new LineCreatorService().createFeatureLine(new Coordinate[]{new Coordinate(px2, py2),new Coordinate(x1,y1)});
-							lastFeatureLine.setAttribute("networkMode", true);
+							lastFeatureLine.setAttribute("network", true);
 							lastFeatureLine.setAttribute("point1", idPointOne);
 							lastFeatureLine.setAttribute("point2", ponto2.getID());
 							
@@ -766,7 +766,7 @@ public class NetworkCreatorTool extends Manager {
 									}				
 									newCoord[i+1] = new Coordinate(x2, y2);	
 									lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord);
-									lastFeatureLine.setAttribute("networkMode", true);
+									lastFeatureLine.setAttribute("network", true);
 									lastFeatureLine.setAttribute("point1", ponto1.getID());
 									lastFeatureLine.setAttribute("point2", idPointTwo);
 									
@@ -780,7 +780,7 @@ public class NetworkCreatorTool extends Manager {
 										cont++;
 									}
 									lastFeatureLine = new LineCreatorService().createFeatureLine(newCoord2);
-									lastFeatureLine.setAttribute("networkMode", true);
+									lastFeatureLine.setAttribute("network", true);
 									lastFeatureLine.setAttribute("point1", idPointTwo);
 									lastFeatureLine.setAttribute("point2", ponto2.getID());
 									
@@ -796,7 +796,7 @@ public class NetworkCreatorTool extends Manager {
 
 							SimpleFeature ponto1 = new IntersectGeometry().intersectPointFeature(new GeometryFactory().createPoint(new Coordinate(px1, py1)), pointCollection);		    			
 							lastFeatureLine = new LineCreatorService().createFeatureLine(new Coordinate[]{new Coordinate(px1, py1),new Coordinate(x2,y2)});
-							lastFeatureLine.setAttribute("networkMode", true);
+							lastFeatureLine.setAttribute("network", true);
 							lastFeatureLine.setAttribute("point1", ponto1.getID());
 							lastFeatureLine.setAttribute("point2", idPointTwo);
 							
@@ -804,7 +804,7 @@ public class NetworkCreatorTool extends Manager {
 
 							SimpleFeature ponto2 = new IntersectGeometry().intersectPointFeature(new GeometryFactory().createPoint(new Coordinate(px2, py2)), pointCollection);	 
 							lastFeatureLine = new LineCreatorService().createFeatureLine(new Coordinate[]{new Coordinate(px2, py2),new Coordinate(x2,y2)});
-							lastFeatureLine.setAttribute("networkMode", true);
+							lastFeatureLine.setAttribute("network", true);
 							lastFeatureLine.setAttribute("point1", idPointOne);
 							lastFeatureLine.setAttribute("point2", ponto2.getID());
 							

@@ -81,7 +81,7 @@ public class DeleteTool extends Manager{
 				featuresToDelete.add(feature);				
 				feature.setAttribute("selected", false);
 				//procura linhas apenas se é modo rede
-				if(feature.getAttribute("networkMode").equals(1)){
+				if(feature.getAttribute("network").equals(1)){
 					findLinesToRemove(feature.getID());
 				}
 			}
@@ -98,7 +98,7 @@ public class DeleteTool extends Manager{
 				featuresToDelete.add(feature);				
 				feature.setAttribute("selected", false);
 				//verifica pontos apenas se é linha no modo rede
-				if(feature.getAttribute("networkMode").equals(1)){
+				if(feature.getAttribute("network").equals(1)){
 					String startPointID = (String) feature.getAttribute("point1");
 					SimpleFeature lineStartPoint = findPointByID(startPointID);
 					if(isOrphanedPoint(lineStartPoint, feature))

@@ -683,7 +683,7 @@ public class PropertiesWindow extends JDialog {
 			txtLineID.setText(feature.getID());		
 			fillAttributeTables(feature, (AttributesTableModel) tableLine.getModel(), (AttributesTableModel) tableCoordLine.getModel());
 
-			if((Boolean) feature.getAttribute("networkMode")){
+			if((Boolean) feature.getAttribute("network")){
 				addPoint1Tab();
 				txtPointID.setText((String) feature.getAttribute("point1"));
 				fillAttributeTables(featurePoint1, (AttributesTableModel)tablePoint.getModel(), (AttributesTableModel)tableCoordPoint.getModel());

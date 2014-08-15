@@ -162,3 +162,59 @@ error=ERRO:  coluna "classe" não existe at character 545
 sql=SELECT nome, arruamento_SJC.*  FROM ((te_collection_2_aux LEFT JOIN te_collection_2 ON te_collection_2_aux.object_id = te_collection_2.c_object_id ) LEFT JOIN arruamento_SJC ON te_collection_2.c_object_id = arruamento_SJC.object_id) WHERE  (te_collection_2.label_x > 392972.644213254100000 AND te_collection_2.label_y > 7422543.224312401400000 AND te_collection_2.label_x < 424018.379718341980000 AND te_collection_2.label_y < 7441804.284610921500000)  AND arruamento_SJC.nome IS NOT NULL  ORDER BY classe DESC 
 error=ERRO:  coluna "classe" não existe at character 545
 
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,object_id_,idtipo,idsubtipo,valor,estado,localiza,cota,notacao,demanda,datainst,descric,especif,x_a13,y_a14,object_id_6,selected,networkMode FROM nos WHERE  ( spatial_box && '(294633.968206588760000, 7458979.719159720500000, 294563.605825407200000, 7458944.564499313900000)'::box)
+error=ERRO:  coluna "networkmode" não existe at character 232
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,object_id_,idtipo,idsubtipo,valor,estado,localiza,cota,notacao,demanda,datainst,descric,especif,x_a13,y_a14,object_id_6,selected,networkMode FROM nos WHERE  ( spatial_box && '(294629.915668113040000, 7458979.321903938400000, 294559.553296623170000, 7458944.167224498500000)'::box)
+error=ERRO:  coluna "networkmode" não existe at character 232
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,object_id_,idtipo,idsubtipo,valor,estado,localiza,cota,notacao,demanda,datainst,descric,especif,x_a13,y_a14,object_id_6,selected,networkMode FROM nos WHERE  ( spatial_box && '(294632.475586260900000, 7458983.254976414100000, 294562.113190674340000, 7458948.100302048000000)'::box)
+error=ERRO:  coluna "networkmode" não existe at character 232
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,object_id_,idtipo,idsubtipo,valor,estado,localiza,cota,notacao,demanda,datainst,descric,especif,x_a13,y_a14,object_id_6,selected,networkMode FROM nos WHERE  ( spatial_box && '(294630.840426962710000, 7458977.077714052100000, 294560.478064661150000, 7458941.923043360900000)'::box)
+error=ERRO:  coluna "networkmode" não existe at character 232
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,object_id_,idtipo,idsubtipo,valor,estado,localiza,cota,notacao,demanda,datainst,descric,especif,x_a13,y_a14,object_id_6,selected,networkMode FROM nos WHERE  ( spatial_box && '(294685.541382691360000, 7459212.397667087600000, 294637.252003120720000, 7459177.544100459700000)'::box)
+error=ERRO:  coluna "networkmode" não existe at character 232
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,object_id_,idtipo,idsubtipo,valor,estado,localiza,cota,notacao,demanda,datainst,descric,especif,x_a13,y_a14,object_id_6,selected,networkMode FROM nos WHERE  ( spatial_box && '(294690.976129476270000, 7459207.274235952600000, 294642.686756393640000, 7459172.420698121200000)'::box)
+error=ERRO:  coluna "networkmode" não existe at character 232
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,object_id_,idtipo,idsubtipo,valor,estado,localiza,cota,notacao,demanda,datainst,descric,especif,x_a13,y_a14,object_id_6,selected,networkMode FROM nos WHERE  ( spatial_box && '(294709.811407436030000, 7459197.956722793200000, 294661.522028026640000, 7459163.103267885700000)'::box)
+error=ERRO:  coluna "networkmode" não existe at character 232
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,object_id_,idtipo,idsubtipo,valor,estado,localiza,cota,notacao,demanda,datainst,descric,especif,x_a13,y_a14,object_id_6,selected,networkMode FROM nos WHERE  ( spatial_box && '(294729.045271631800000, 7459189.670468873300000, 294680.755881566030000, 7459154.817096190500000)'::box)
+error=ERRO:  coluna "networkmode" não existe at character 232
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,linkcolumn,network,selected,type,IP_id FROM IP WHERE  ( spatial_box && '(697370.967617781600000, 7530508.812394142200000, 697286.328193311810000, 7530465.643976336300000)'::box)
+error=ERRO:  coluna "ip_id" não existe at character 136
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,linkcolumn,network,selected,type,IP_id FROM IP WHERE  ( spatial_box && '(697347.844870632510000, 7530498.526155553800000, 697305.525160281450000, 7530476.941940733200000)'::box)
+error=ERRO:  coluna "ip_id" não existe at character 136
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,linkcolumn,network,selected,type,IP_id FROM IP WHERE  ( spatial_box && '(697347.232693551110000, 7530499.289641374700000, 697304.912982212500000, 7530477.705423731400000)'::box)
+error=ERRO:  coluna "ip_id" não existe at character 136
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,linkcolumn,network,selected,type,IP_id FROM IP WHERE  ( spatial_box && '(697347.232693551110000, 7530499.289641374700000, 697304.912982212500000, 7530477.705423731400000)'::box)
+error=ERRO:  coluna "ip_id" não existe at character 136
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,linkcolumn,network,selected,type,IP_id FROM IP WHERE  ( spatial_box && '(697369.919290578460000, 7530509.237916836500000, 697285.279867312170000, 7530466.069492208800000)'::box)
+error=ERRO:  coluna "ip_id" não existe at character 136
+
+-------------------
+sql=SELECT geom_id,object_id,spatial_box,spatial_data,linkcolumn,network,selected,type,IP_id FROM IP WHERE  ( spatial_box && '(697415.292578833880000, 7530529.134395013600000, 697246.013729947040000, 7530442.797588389400000)'::box)
+error=ERRO:  coluna "ip_id" não existe at character 136
+
