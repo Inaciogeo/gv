@@ -9,6 +9,8 @@ import java.util.ResourceBundle;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+import org.opengis.feature.simple.SimpleFeature;
+
 import br.org.funcate.eagles.kernel.dispatcher.EventDispatcher;
 import br.org.funcate.eagles.kernel.dispatcher.EventHandler;
 import br.org.funcate.eagles.kernel.listener.EventListener;
@@ -18,8 +20,10 @@ import br.org.funcate.eagles.kernel.transmitter.EventTransmitter;
 import br.org.funcate.glue.controller.CanvasController;
 import br.org.funcate.glue.controller.Mediator;
 import br.org.funcate.glue.event.BoxChangedEvent;
+import br.org.funcate.glue.event.CommitFeatureEvent;
 import br.org.funcate.glue.event.DrawFeatureEvent;
 import br.org.funcate.glue.event.GetLocaleEvent;
+import br.org.funcate.glue.event.GetOsEvent;
 import br.org.funcate.glue.event.GetSelectFeatureEvent;
 import br.org.funcate.glue.event.ScaleChangedEvent;
 import br.org.funcate.glue.event.SelectFeatureEvent;
@@ -27,7 +31,12 @@ import br.org.funcate.glue.event.SelectedThemeEvent;
 import br.org.funcate.glue.event.TreeThemeChangeEvent;
 import br.org.funcate.glue.event.UnselectedThemeEvent;
 import br.org.funcate.glue.main.AppSingleton;
+
+import br.org.funcate.glue.model.Representation;
+import br.org.funcate.glue.model.Theme;
 import br.org.funcate.glue.model.tree.CustomNode;
+
+import br.org.funcate.glue.view.GlueMessageDialog;
 import br.org.funcate.jtdk.edition.event.SetStyleEvent;
 import br.org.funcate.jtdk.edition.undoredo.event.UndoRedoActiveEvent;
 import br.org.funcate.jtdk.model.dto.FeatureDTO;
@@ -35,6 +44,7 @@ import br.org.funcate.plugin.GluePluginService;
 import com.nexusbr.gv.controller.Manager;
 import com.nexusbr.gv.controller.tools.DeleteTool;
 import com.nexusbr.gv.controller.tools.FeatureSelectTool;
+import com.nexusbr.gv.services.ChangesCommitService;
 import com.nexusbr.gv.services.CreateFeatureStyle;
 import com.nexusbr.gv.services.SelectFeatureService;
 import com.nexusbr.gv.singleton.GVSingleton;
@@ -123,6 +133,7 @@ public class GVClient implements EventDispatcher, EventListener{
 		this.eventsToListen.add(BoxChangedEvent.class.getName());
 		this.eventsToListen.add(DrawFeatureEvent.class.getName());
 		this.eventsToListen.add(SelectFeatureEvent.class.getName());
+		this.eventsToListen.add(CommitFeatureEvent.class.getName());
 
 		AppSingleton singleton = AppSingleton.getInstance();
 		Mediator mediator = singleton.getMediator();
@@ -168,6 +179,45 @@ public class GVClient implements EventDispatcher, EventListener{
 			
 	}
 	
+	public void initFeaturesIP(){
+		try {
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createSnapPointStyle(), "SNAPPOINT"));
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createGhostPointStyle(), "GHOSTPOINT"));
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createGhostLineStyle(), "GHOSTLINE"));
+			
+			ArrayList<FeatureDTO> points = manager.locatePointsIP();
+			
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPointStyle(), "POINT"));
+			manager.ShowPointFeatures(points);
+			
+			manager.dispatchLayersFeedback();
+			manager.dispatchLayersEdition();
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void initFeaturesOS(){
+		try {
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createSnapPointStyle(), "SNAPPOINT"));
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createGhostPointStyle(), "GHOSTPOINT"));
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createGhostLineStyle(), "GHOSTLINE"));
+			
+			ArrayList<FeatureDTO> points = manager.locatePointsOS();
+			
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPointStyle3(), "POINT"));
+			manager.ShowPointFeatures(points);
+			
+			manager.dispatchLayersFeedback();
+			manager.dispatchLayersEdition();
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+		
+	
 	public boolean initFeatures(){
 		boolean hasFeatures = false;
 		try {
@@ -177,7 +227,7 @@ public class GVClient implements EventDispatcher, EventListener{
 			
 			ArrayList<FeatureDTO> points = manager.locatePoints();
 			
-			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPointStyle3 (), "POINT"));
+			dispatch(manager.getTransmitter(), new SetStyleEvent(this, new CreateFeatureStyle().createPointStyle3(), "POINT"));
 			manager.ShowPointFeatures(points);
 			
 			ArrayList<FeatureDTO> lines = manager.locateLines();
@@ -242,20 +292,74 @@ public class GVClient implements EventDispatcher, EventListener{
 			
 		}else if(event instanceof SelectFeatureEvent){
 			this.handle((SelectFeatureEvent)event);
+			
+		}else if(event instanceof CommitFeatureEvent){
+			this.handle((CommitFeatureEvent)event);
 		}
 	}
 	
-	private void handle(SelectFeatureEvent e){
-		GluePluginService.setCurrentTool(new FeatureSelectTool());
-		initFeatures();
+	private void handle(CommitFeatureEvent e){
+		CustomNode nodeCurrentTheme = AppSingleton.getInstance()
+				.getTreeState().getCurrentTheme();
+
+		if (nodeCurrentTheme != null && nodeCurrentTheme.getTheme().getId()==21) {
+
+			Theme theme = nodeCurrentTheme.getTheme();
+			if (theme != null) {
+				List<Representation> reps = theme.getReps();
+				boolean validRep = false;
+				for (Representation representation : reps) {
+					if (representation.getId() == Representation.POINT) {
+						validRep = true;
+					}
+				}
+				if (validRep == false) {
+					GlueMessageDialog.show("Por favor, selecione um tema OS!",null, 3);
+					return;
+				}
+			} else {
+				GlueMessageDialog.show("Por favor, selecione o tema OS!",null, 3);
+				return;
+			}
+
+		} else {
+			GlueMessageDialog.show("Por favor, selecione um tema OS!", null, 3);
+			return;
+		}
+		
+		//GluePluginService.setCurrentTool(new PointCreatorTool());
+		//ChangesCommitService.saveOS(e.getOsCoords(), e.isSelected(), e.isNetwork(), e.getOsid(), e.getIp(), e.getIp(), e.getStatus());
+		
+		
+		ChangesCommitService.saveOS(Double.parseDouble(e.getX()), Double.parseDouble(e.getY()), false, false, e.getOsid(), e.getOcurrence(),e.getIp(), 
+					 "aberto");
+		
 	}
+	
+	private void handle(SelectFeatureEvent e){
+		String type = e.getType();
+		GluePluginService.setCurrentTool(new DeleteTool());
+		GluePluginService.setCurrentTool(new FeatureSelectTool());
+		
+		if(type=="os"){
+			initFeaturesOS();
+		}else if (type=="ip"){
+			initFeaturesIP();	
+		}
+	}
+	
 	
 	private void handle(DrawFeatureEvent e){
 		 streetIds = e.getLineIds(); 
 		 lotIds = e.getPolygonIds();
+		 
 		 try {
 			 if(streetIds!=null)
 				drawFeatureLineById(streetIds);
+			 else{
+				 ArrayList<FeatureDTO> points = manager.locatePoints();
+				 setOsAttributes(points);
+			 }
 			 if(lotIds!=null)
 				drawFeaturePolygonById(lotIds);
 				
@@ -327,7 +431,9 @@ public class GVClient implements EventDispatcher, EventListener{
 			//oldx1 = AppSingleton.getInstance().getCanvasState().getBox().getX1();
 			//oldy1 = AppSingleton.getInstance().getCanvasState().getBox().getY1();
 			//limpa dataSource - remover quando implementar getfeatures com projeção virtual earth mercato 
-			hasFeatures = initFeatures();
+			//hasFeatures = initFeatures();
+			GluePluginService.setCurrentTool(new DeleteTool());
+			initFeaturesOS();
 //			if(hasFeatures)
 //				cleanDataSource();
 			//start = false;		
@@ -379,11 +485,49 @@ public class GVClient implements EventDispatcher, EventListener{
 	public void setSelectFeature(){
 		GetSelectFeatureEvent getSelectFeatureEvent = new GetSelectFeatureEvent(this);
 		getSelectFeatureEvent.setFeatureId(SelectFeatureService.getFeatureId());
+		getSelectFeatureEvent.setOsIP(SelectFeatureService.getOsIP());
+		getSelectFeatureEvent.setOsX(SelectFeatureService.getOsX());
+		getSelectFeatureEvent.setOsY(SelectFeatureService.getOsY());
+		
 		try {
 			this.dispatch(manager.transmitter,getSelectFeatureEvent);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
+	}
+	
+	public void setOsAttributes(ArrayList<FeatureDTO> pointsF){
+		GetOsEvent getOsEvent = new GetOsEvent(this);
+		ArrayList<String> osIDs = new ArrayList<String>();
+		ArrayList<String> ocorrences = new ArrayList<String>();
+		ArrayList<String> status = new ArrayList<String>();
+		try {
+			for (FeatureDTO featurePoint : pointsF) {
+				SimpleFeature simpleFeature = featurePoint.getSimpleFeature();
+				if(simpleFeature.getAttribute("osid")!=null){
+					String osid = simpleFeature.getAttribute("osid").toString();
+					osIDs.add(osid);
+				}
+				if(simpleFeature.getAttribute("ocurrence")!=null){
+					String ocurrence = simpleFeature.getAttribute("ocurrence").toString();
+					ocorrences.add(ocurrence);
+				}
+				if(simpleFeature.getAttribute("status")!=null){
+					String st = simpleFeature.getAttribute("status").toString();
+					status.add(st);	
+				}		
+			}
+			
+			getOsEvent.setOsIDs(osIDs);
+			getOsEvent.setOcorrences(ocorrences);
+			getOsEvent.setStatus(status);
+			
+			this.dispatch(manager.transmitter,getOsEvent);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 	}
 
 }

@@ -156,7 +156,7 @@ public class NetworkCreatorTool extends Manager {
 	private void handle(AfterToolChangedEvent e) throws Exception{
 		//CREATE POINT STYLE
 		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createLineStyle(), "LINE"));
-		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createPointStyle(), "POINT"));
+		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createPointStyle3(), "POINT"));
 		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createSnapLineStyle(), "SNAPLINE"));
 		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createSnapPointStyle(), "SNAPPOINT"));
 		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createGhostLineStyle(), "GHOSTLINE"));

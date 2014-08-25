@@ -23,6 +23,7 @@ import br.org.funcate.glue.event.MouseReleasedEvent;
 import br.org.funcate.glue.event.UpdateCursorEvent;
 import br.org.funcate.glue.main.AppSingleton;
 import br.org.funcate.glue.model.tree.CustomNode;
+import br.org.funcate.glue.os.view.ServiceOrderCreatorScreen;
 import br.org.funcate.jtdk.edition.event.FeatureCreatedEvent;
 import br.org.funcate.jtdk.edition.event.FeatureRemovedEvent;
 import br.org.funcate.jtdk.edition.event.GetFeatureEvent;
@@ -115,7 +116,7 @@ public class PointCreatorTool extends Manager {
 	private void handle(AfterToolChangedEvent e) throws Exception{
 		//CREATE POINT STYLE
 		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createLineStyle(), "LINE"));
-		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createPointStyle(), "POINT"));
+		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createPointStyle3(), "POINT"));
 		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createPolygonStyle(), "POLYGON"));
 		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createGhostPointStyle(), "GHOSTPOINT"));
 		dispatch(transmitter, new SetStyleEvent(this, new CreateFeatureStyle().createSnapPointStyle(), "SNAPPOINT"));
@@ -280,6 +281,7 @@ public class PointCreatorTool extends Manager {
 		
 		dispatchLayersFeedback();		
 		dispatchLayersEdition();
+		ServiceOrderCreatorScreen.getInstance().setVisible(true);
 	}
 
 	private void handle(MouseMovedEvent e) throws Exception {

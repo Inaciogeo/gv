@@ -247,6 +247,104 @@ public class Manager implements Tool {
 
 		return listF;
 	}
+	/**
+	 * 
+	 * @return
+	 * @throws Exception
+	 */
+	public ArrayList<FeatureDTO> locatePointsIP() throws Exception {
+		AppSingleton singleton = AppSingleton.getInstance();
+		TreeState state = singleton.getTreeState();
+		View view = state.getCurrentView().getView();
+		List<Theme> themes = view.getThemes();
+		
+		ArrayList<FeatureDTO> listF = new ArrayList<FeatureDTO>();
+		for (Theme theme : themes) {
+			if(!theme.isVisibility())
+				continue;
+			
+			for (Representation rep : theme.getReps()) {
+				if (rep.getId() == 4l && theme.getId() == 19) {
+					Projection layerProjection = theme.getLayer()
+							.getProjection();
+					Projection canvasProjection = AppSingleton.getInstance()
+							.getCanvasState().getProjection();
+					Box currentBox = AppSingleton.getInstance()
+							.getCanvasState().getBox();
+
+					TerraJavaClient services = AppSingleton.getInstance()
+							.getServices();
+					Box convertedBox = services.remapCoordinates(currentBox,
+							canvasProjection, layerProjection);
+
+					ArrayList<FeatureDTO> listObj = featureManipulation.getFeatures(convertedBox, theme);
+					
+					for (FeatureDTO feature : listObj) {
+						GVSingleton.getInstance().getPointIDs().add(feature.getObjectId());
+					}
+
+					// VERIFY IF THERE ALREADY EXIST THE POINT IN SCREEN
+					@SuppressWarnings("unused")
+					ArrayList<String> listIDs = getFeaturesID("POINT",
+							GVSingleton.getInstance().getPointIDs());
+
+					// GET FEATURES From Object Ids
+					listF.addAll(listObj);
+				}
+			}
+		}
+
+		return listF;
+	}
+	/**
+	 * 
+	 * @return
+	 * @throws Exception
+	 */
+	public ArrayList<FeatureDTO> locatePointsOS() throws Exception {
+		AppSingleton singleton = AppSingleton.getInstance();
+		TreeState state = singleton.getTreeState();
+		View view = state.getCurrentView().getView();
+		List<Theme> themes = view.getThemes();
+		
+		ArrayList<FeatureDTO> listF = new ArrayList<FeatureDTO>();
+		for (Theme theme : themes) {
+			if(!theme.isVisibility())
+				continue;
+			
+			for (Representation rep : theme.getReps()) {
+				if (rep.getId() == 4l && theme.getId() == 21) {
+					Projection layerProjection = theme.getLayer()
+							.getProjection();
+					Projection canvasProjection = AppSingleton.getInstance()
+							.getCanvasState().getProjection();
+					Box currentBox = AppSingleton.getInstance()
+							.getCanvasState().getBox();
+
+					TerraJavaClient services = AppSingleton.getInstance()
+							.getServices();
+					Box convertedBox = services.remapCoordinates(currentBox,
+							canvasProjection, layerProjection);
+
+					ArrayList<FeatureDTO> listObj = featureManipulation.getFeatures(convertedBox, theme);
+					
+					for (FeatureDTO feature : listObj) {
+						GVSingleton.getInstance().getPointIDs().add(feature.getObjectId());
+					}
+
+					// VERIFY IF THERE ALREADY EXIST THE POINT IN SCREEN
+					@SuppressWarnings("unused")
+					ArrayList<String> listIDs = getFeaturesID("POINT",
+							GVSingleton.getInstance().getPointIDs());
+
+					// GET FEATURES From Object Ids
+					listF.addAll(listObj);
+				}
+			}
+		}
+
+		return listF;
+	}
 
 	/**
 	 * 

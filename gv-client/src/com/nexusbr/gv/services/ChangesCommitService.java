@@ -158,6 +158,19 @@ public class ChangesCommitService{
 		}
 		return true;
 	}
+	public static void saveOS(double x, double y, boolean selected, boolean network,String osid,String ip ,String ocurrence,String status){
+		FeatureManipulation featureManipulation = new FeatureManipulationService();
+		
+		List<FeatureDTO> featureList = new ArrayList<FeatureDTO>();
+		PointCreatorService service = new PointCreatorService();
+		SimpleFeature simpleFeature = service.createPointOS(x, y, selected, network, osid, ip, ocurrence, status);
+		FeatureDTO featureDTO = new FeatureDTO(simpleFeature);
+		featureList.add(featureDTO);
+		
+		Theme theme = AppSingleton.getInstance().getTreeState().getCurrentTheme().getTheme();
+		
+		Vector<String> vecIds = featureManipulation.saveFeatures(theme, featureList);
+	}
 	
 	public boolean removeFeatures(List<String> toDelete, int representation){
 		CustomNode themeNode = AppSingleton.getInstance().getTreeState().getCurrentTheme();

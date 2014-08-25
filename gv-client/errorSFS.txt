@@ -218,3 +218,43 @@ error=ERRO:  coluna "ip_id" não existe at character 136
 sql=SELECT geom_id,object_id,spatial_box,spatial_data,linkcolumn,network,selected,type,IP_id FROM IP WHERE  ( spatial_box && '(697415.292578833880000, 7530529.134395013600000, 697246.013729947040000, 7530442.797588389400000)'::box)
 error=ERRO:  coluna "ip_id" não existe at character 136
 
+-------------------
+sql=SELECT OS.* FROM OS WHERE  ( spatial_box && '(-1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)'::box)
+error=ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+-------------------
+sql=SELECT OS.* FROM OS WHERE  ( spatial_box && '(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)'::box)
+error=ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+-------------------
+sql=SELECT OS.* FROM OS WHERE  ( spatial_box && '(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)'::box)
+error=ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+-------------------
+sql=SELECT OS.* FROM OS WHERE  ( spatial_box && '(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)'::box)
+error=ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+-------------------
+sql=SELECT OS.* FROM OS WHERE  ( spatial_box && '(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)'::box)
+error=ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+-------------------
+sql=SELECT OS.* FROM OS WHERE  ( spatial_box && '(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)'::box)
+error=ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+-------------------
+sql=SELECT OS.* FROM OS WHERE  ( spatial_box && '(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)'::box)
+error=ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+-------------------
+sql=SELECT OS.* FROM OS WHERE  ( spatial_box && '(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)'::box)
+error=ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+-------------------
+sql=SELECT OS.* FROM OS WHERE  ( spatial_box && '(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)'::box)
+error=ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+-------------------
+sql=SELECT OS.* FROM OS WHERE  ( spatial_box && '(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)'::box)
+error=ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+

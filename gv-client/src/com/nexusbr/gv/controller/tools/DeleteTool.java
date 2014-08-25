@@ -77,14 +77,14 @@ public class DeleteTool extends Manager{
 		while(featureIterator.hasNext()){
 			SimpleFeature feature = featureIterator.next();
 			
-			if(feature.getAttribute("selected").equals(true)){
+			//if(feature.getAttribute("selected").equals(true)){  inacio poc 
 				featuresToDelete.add(feature);				
 				feature.setAttribute("selected", false);
 				//procura linhas apenas se é modo rede
 				if(feature.getAttribute("network").equals(1)){
 					findLinesToRemove(feature.getID());
 				}
-			}
+			//}
 		}
 		////
 		// separa para remoção linhas e pontos órfãos

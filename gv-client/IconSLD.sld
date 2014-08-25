@@ -12,7 +12,7 @@
 <OnlineResource xlink:type="simple" xlink:href="Lightbulb.png"/>
 <Format>image/png</Format>
 </ExternalGraphic>
-<Size>25</Size>
+<Size>22</Size>
 </Graphic>
 </PointSymbolizer>
 </Rule>

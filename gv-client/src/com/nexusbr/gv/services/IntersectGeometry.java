@@ -32,8 +32,6 @@ public class IntersectGeometry {
 	private Geometry geomintersection;
 	private ToolbarWindow toolbar = GVSingleton.getInstance().getToolbar();
 	
-
-	
 	public boolean checkIntersection(Geometry polygon, SimpleFeatureCollection featureCollection, Boolean... lineNW) {
 		boolean found = false;		
 		SimpleFeatureIterator iterator = null; 
@@ -47,8 +45,20 @@ public class IntersectGeometry {
 					if(geom.getGeometryType().equals("Point")){
 						if(feature.getAttribute("network").equals("true")){ 
 							feature.setAttribute("selected", true);	
+							
 							//toolbar.setFeature(feature);
-							SelectFeatureService.setFeatureId(feature.getAttribute("ip").toString());
+							if(feature.getAttribute("ip")!=null){
+								SelectFeatureService.setFeatureId(feature.getAttribute("ip").toString());
+								Point point = (Point) feature.getDefaultGeometry();
+								SelectFeatureService.setOsX(String.valueOf(point.getCoordinate().x));
+								SelectFeatureService.setOsY(String.valueOf(point.getCoordinate().y));
+								SelectFeatureService.setOsIP(feature.getAttribute("ip").toString());						
+							}
+							
+							if(feature.getAttribute("osid")!=null)
+								SelectFeatureService.setFeatureId(feature.getAttribute("osid").toString());
+								
+							
 							GVClient gvClient = MainGV.getGVClientInstance();
 							gvClient.setSelectFeature();						
 							fillDynamicAttributes(4L);
@@ -83,7 +93,9 @@ public class IntersectGeometry {
 					feature.setAttribute("selected", false);
 				}
 			}
-		}catch(Exception e){}		
+		}catch(Exception e){
+			e.printStackTrace();
+		}		
 		return found;
 	}
 

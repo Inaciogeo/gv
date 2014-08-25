@@ -315,3 +315,579 @@ java.lang.RuntimeException: Invalid connection on POOL.
 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
 	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
 	at java.awt.EventDispatchThread.run(Unknown Source)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, 1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000, -1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(1.#INF00000000000, -1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)
+Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+java.lang.RuntimeException: Couldn't load objects geometry: ERRO:  sintaxe de entrada é inválida para tipo box: "(-1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000, 1.#INF00000000000)" at character 97
+
+	at br.org.funcate.terrajava.persistencia.TerraJava.drawThemes(Native Method)
+	at br.org.funcate.glue.service.TerraJavaJNI.drawThemes(TerraJavaJNI.java:1216)
+	at br.org.funcate.glue.service.TerraJavaClient.plotViewThreadSafe(TerraJavaClient.java:2592)
+	at br.org.funcate.glue.model.request.BDRequest.plotView(BDRequest.java:81)
+	at br.org.funcate.glue.model.request.TileRequest.run(TileRequest.java:96)

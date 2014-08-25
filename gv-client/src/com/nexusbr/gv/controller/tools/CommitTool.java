@@ -18,7 +18,6 @@ import br.org.funcate.glue.event.AfterToolChangedEvent;
 import br.org.funcate.glue.main.AppSingleton;
 import br.org.funcate.glue.model.Representation;
 import br.org.funcate.glue.model.tree.CustomNode;
-import br.org.funcate.glue.view.NodeType;
 import br.org.funcate.jtdk.edition.event.FeatureRemovedEvent;
 import br.org.funcate.jtdk.edition.event.GetFeatureEvent;
 import br.org.funcate.jtdk.model.dto.FeatureDTO;
@@ -74,39 +73,50 @@ public class CommitTool extends Manager{
 		ChangesCommitService service = new ChangesCommitService();
 		CustomNode themeNode = AppSingleton.getInstance().getTreeState().getCurrentTheme();
 		
-		if (themeNode.getNodeType() == NodeType.NETWORK_THEME) {
-			SimpleFeatureCollection points = forPoints();
-			if (points.isEmpty() == false) {
-				if (service.saveFeatures(points, Representation.POINT)) {
-					//replacePoints();
-				}
-			}
-
-			SimpleFeatureCollection lines = forLines();
-			if (lines.isEmpty() == false) {
-				if (service.saveFeatures(lines, Representation.LINE)) {
-					//replaceLines();
-				}
-			}
-		}else if(themeNode.getNodeType() == NodeType.DEFAULT){
-			SimpleFeatureCollection lines = forLines();
-			if (lines.isEmpty() == false) {
-				
-				if (service.saveFeatures(lines, Representation.LINE)) {
-					//replaceLines();
-				}
+// bloco para network e ramais  		
+//		if (themeNode.getNodeType() == NodeType.NETWORK_THEME) {
+//			SimpleFeatureCollection points = forPoints();
+//			if (points.isEmpty() == false) {
+//				if (service.saveFeatures(points, Representation.POINT)) {
+//					//replacePoints();
+//				}
+//			}
+//
+//			SimpleFeatureCollection lines = forLines();
+//			if (lines.isEmpty() == false) {
+//				if (service.saveFeatures(lines, Representation.LINE)) {
+//					//replaceLines();
+//				}
+//			}
+//		}else if(themeNode.getNodeType() == NodeType.DEFAULT){
+//			SimpleFeatureCollection lines = forLines();
+//			if (lines.isEmpty() == false) {
+//				
+//				if (service.saveFeatures(lines, Representation.LINE)) {
+//					//replaceLines();
+//				}
+//			}
+//		}
+		
+		SimpleFeatureCollection points = forPoints();
+		if (points.isEmpty() == false) {
+			if (service.saveFeatures(points, Representation.POINT)) {
+				//replacePoints();
 			}
 		}
 		
-		SimpleFeatureCollection polygons = forPolygon();
-		if(polygons.isEmpty() == false){
-			if(service.saveFeatures(polygons, Representation.POLYGON)){
-				//replacePolygon();
-			}
-			else{
-				
-			}
-		}
+		
+		
+// sem poligonos por enquanto		
+//		SimpleFeatureCollection polygons = forPolygon();
+//		if(polygons.isEmpty() == false){
+//			if(service.saveFeatures(polygons, Representation.POLYGON)){
+//				//replacePolygon();
+//			}
+//			else{
+//				
+//			}
+//		}
 
 		/* REDRAW CANVAS VIEW */
 		AppSingleton.getInstance().getMediator().reDrawView();

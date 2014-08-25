@@ -24,6 +24,31 @@ public class PointCreatorService {
 	public Geometry createGeomPoint(Coordinate coord){
 		return new GeometryFactory().createPoint(coord);	
 	}
+	
+	public SimpleFeature createPointOS(double x, double y, boolean selected, boolean network,String osid,String ip ,String ocurrence,String status){
+
+		try {
+			TYPEpoint = DataUtilities.createType("Point","geom:Point,selected:Boolean,network:Boolean," +
+						"osid:String,ocurrence:String,ip:String,status:String");
+		} catch (SchemaException e) {}
+		SimpleFeature feature =
+				(SimpleFeatureBuilder.build(
+						TYPEpoint, 
+						new Object[]{ 
+								new GeometryFactory().createPoint(new Coordinate(x, y)), //GEOMETRY 
+								false, 	//is SELECTED
+								false, 	//is NETWORK
+								osid,
+								ip,
+								ocurrence,
+								status
+						},
+						null	// ID AUTOMATICO
+						));
+
+		return feature;
+	}	
+	
 
 	public SimpleFeature createPoint(double x, double y){
 		SimpleFeature feature =
